@@ -497,7 +497,8 @@ function toggleBookRead(sIdx, bIdx, checked) {
     data[sIdx].books[bIdx].doneReading = checked;
     saveData();
     // Update UI without full re-render to preserve scroll
-    const item = document.querySelectorAll('.series-card')[...Array.from(document.querySelectorAll('.series-card')).findIndex(c => c.dataset.idx == sIdx)]?.querySelectorAll('.book-item')[bIdx];
+    const cards = Array.from(document.querySelectorAll('.series-card'));
+    const item = cards[cards.findIndex(c => c.dataset.idx == sIdx)]?.querySelectorAll('.book-item')[bIdx];
     if (item) item.classList.toggle('done-reading', checked);
     renderStats();
     // Update count display
