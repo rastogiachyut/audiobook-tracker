@@ -338,7 +338,16 @@ let openDescs = new Set();
 // --- Data ---
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) { try { data = JSON.parse(saved); } catch(e) { data = []; } }
+  if (saved) {
+    try {
+      data = JSON.parse(saved);
+      // If stored data has no books arrays, discard and fetch fresh
+      if (data.length && !data.some(d => d.books && d.books.length)) {
+        console.log('Stored data missing books, fetching fresh from data.json');
+        data = [];
+      }
+    } catch(e) { data = []; }
+  }
   if (!data.length) {
     fetch('data.json').then(r => r.json()).then(json => { data = json; saveData(); render(); }).catch(() => render());
   }
