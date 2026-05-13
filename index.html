@@ -415,7 +415,7 @@ let expandedSeries = new Set();
 let openDescs = new Set();
 
 // --- Data ---
-const DATA_VERSION = 6; // bump this when data.json changes to force reload
+const DATA_VERSION = 7; // bump this when data.json changes to force reload
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
   const savedVersion = parseInt(localStorage.getItem(STORAGE_KEY + '_version') || '0', 10);

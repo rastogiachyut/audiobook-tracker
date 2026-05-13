@@ -3641,48 +3641,28 @@
     "books": [
       {
         "title": "Shadeslinger",
-        "releaseDate": null,
-        "rating": "4.3",
-        "url": null,
-        "doneReading": false,
         "downloaded": true,
-        "description": "A man with a terminal illness enters a virtual reality game that becomes his new life."
+        "read": false
       },
       {
-        "title": "Emitter",
-        "releaseDate": null,
-        "rating": "4.3",
-        "url": null,
-        "doneReading": false,
+        "title": "Black Sand Baron",
         "downloaded": true,
-        "description": "The second installment of the Ripple System series continues the VR adventure."
+        "read": false
       },
       {
-        "title": "Reader",
-        "releaseDate": null,
-        "rating": "4.3",
-        "url": null,
-        "doneReading": false,
+        "title": "Gilded Ghost",
         "downloaded": true,
-        "description": "The third book in the Ripple System series."
+        "read": false
       },
       {
-        "title": "Council",
-        "releaseDate": null,
-        "rating": "4.3",
-        "url": null,
-        "doneReading": false,
+        "title": "Shattersoul",
         "downloaded": true,
-        "description": "The fourth book in the Ripple System series."
+        "read": false
       },
       {
-        "title": "Dreadfall",
-        "releaseDate": null,
-        "rating": "4.3",
-        "url": null,
-        "doneReading": false,
+        "title": "Emperor's End",
         "downloaded": true,
-        "description": "The fifth book in the Ripple System series."
+        "read": false
       },
       {
         "title": "Lunatic's Landing",
