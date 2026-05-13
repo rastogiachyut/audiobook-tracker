@@ -1413,7 +1413,7 @@
     "goodreads": {
       "rating": "4.10",
       "description": "6 primary works (Arcane Ascension series)",
-      "url": "https://www.goodreads.com/book/show/34403860-sufficiently-advanced-magic"
+      "url": "https://www.goodreads.com/series/231832-arcane-ascension"
     },
     "books": [
       {
@@ -2580,7 +2580,7 @@
     "goodreads": {
       "rating": "4.7",
       "description": "A comedic LitRPG isekai series by Dakota Krout following an overpowered protagonist who treats the fantasy world like a video game — looting everything, ignoring social conventions, and fighting constantly. The series parodies RPG tropes while delivering satisfying progression and absurdist humor across three books.",
-      "url": "https://www.goodreads.com/series/229735-the-completionist-chronicles"
+      "url": "https://www.goodreads.com/series/298351-full-murderhobo"
     },
     "books": [
       {
@@ -3006,71 +3006,48 @@
     "goodreads": {
       "rating": "4.17",
       "description": "A progression fantasy series by John Bierce.",
-      "url": "https://www.goodreads.com/series/268848-mage-errant"
+      "url": "https://www.goodreads.com/series/252085-mage-errant"
     },
     "books": [
       {
         "title": "Into the Labyrinth",
-        "releaseDate": null,
-        "rating": "4.2",
-        "url": null,
-        "doneReading": false,
         "downloaded": false,
-        "description": "Hugh of Emblin is, so far as he's concerned, the worst mage in the history of his school."
+        "read": false
       },
       {
         "title": "Jewel of the Endless Erg",
-        "releaseDate": null,
-        "rating": "4.2",
-        "url": null,
-        "doneReading": false,
         "downloaded": false,
-        "description": "The founding of new alliances and friendships as Hugh navigates the dangers of Skyhold."
-      },
-      {
-        "title": "The Lost Gate of Ithos",
-        "releaseDate": null,
-        "rating": "4.2",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Hugh and his friends must strengthen their bonds of virtue to survive the challenges ahead."
-      },
-      {
-        "title": "The Torch That Ignites the Stars",
-        "releaseDate": null,
-        "rating": "4.2",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "The Tournament of Elements brings out the best and worst in Skyhold's students."
-      },
-      {
-        "title": "A Lecture on the Application of Siege Warfare to the Capture of a City",
-        "releaseDate": null,
-        "rating": "4.1",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "The Burning Sands hold ancient secrets that Hugh and his friends must uncover."
+        "read": false
       },
       {
         "title": "A Traitor in Skyhold",
-        "releaseDate": null,
-        "rating": "4.1",
-        "url": null,
-        "doneReading": false,
         "downloaded": false,
-        "description": "The earth abides as Hugh returns to face the consequences of his choices."
+        "read": false
+      },
+      {
+        "title": "The Lost City of Ithos",
+        "downloaded": false,
+        "read": false
       },
       {
         "title": "The Siege of Skyhold",
-        "releaseDate": null,
-        "rating": "4.1",
-        "url": null,
-        "doneReading": false,
         "downloaded": false,
-        "description": "The Crux of all conflicts comes to a head as the war for the continent intensifies."
+        "read": false
+      },
+      {
+        "title": "Tongue Eater",
+        "downloaded": false,
+        "read": false
+      },
+      {
+        "title": "The Last Echo of the Lord of Bells",
+        "downloaded": false,
+        "read": false
+      },
+      {
+        "title": "The Gorgon Incident and Other Stories",
+        "downloaded": false,
+        "read": false
       }
     ]
   },
@@ -3724,7 +3701,7 @@
     "goodreads": {
       "rating": "4.50",
       "description": "A self-help book by Mark Manson that challenges conventional positivity culture. Manson argues that life's struggles give it meaning, and that choosing what to care about — rather than trying to feel good about everything — is the key to a good life. Blunt, humorous, and grounded in philosophical principles.",
-      "url": "https://www.goodreads.com/book/show/59691388-summary-of-the-subtle-art-of-not-giving-a-fuck-by-mark-manson"
+      "url": "https://www.goodreads.com/book/show/28376213-the-subtle-art-of-not-giving-a-f-ck"
     },
     "books": [
       {
@@ -3772,7 +3749,7 @@
     "goodreads": {
       "rating": "3.99",
       "description": "A dark fantasy LitRPG series by Hugo Huesca following Edward, who becomes a Dungeon Lord — a being of darkness tasked with building and managing a dungeon. Balancing his humanity with his new dark powers, Edward must defend his dungeon from adventurers and rival dungeon lords while protecting the people under his care.",
-      "url": "https://www.goodreads.com/series/207642-the-wraith-s-haunt"
+      "url": "https://www.goodreads.com/series/219164-the-wraith-s-haunt"
     },
     "books": [
       {
@@ -3887,7 +3864,7 @@
     "goodreads": {
       "rating": null,
       "description": null,
-      "url": "https://www.goodreads.com/series/divine-apostasy"
+      "url": "https://www.goodreads.com/series/312009-divine-apostasy"
     },
     "books": [
       {
