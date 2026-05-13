@@ -2584,121 +2584,19 @@
     },
     "books": [
       {
-        "title": "Ritualist",
-        "releaseDate": null,
-        "rating": "4.7",
-        "url": null,
-        "doneReading": false,
+        "title": "Something",
         "downloaded": false,
-        "description": "Trapped between worlds. Potentia might be the way out."
+        "read": false
       },
       {
-        "title": "Regicide",
-        "releaseDate": null,
-        "rating": "4.7",
-        "url": null,
-        "doneReading": false,
+        "title": "Anything",
         "downloaded": false,
-        "description": "An ever-expanding desert. A centuries-old curse."
+        "read": false
       },
       {
-        "title": "Rexus: Side Quest",
-        "releaseDate": null,
-        "rating": "4.7",
-        "url": null,
-        "doneReading": false,
+        "title": "Everything",
         "downloaded": false,
-        "description": "The Dynasty is sending troops. Potentia is plentiful."
-      },
-      {
-        "title": "Raze",
-        "releaseDate": "2019",
-        "rating": "4.42",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Humanity on the run. Desperate base building. Dark…"
-      },
-      {
-        "title": "Ruthless",
-        "releaseDate": "2020",
-        "rating": "4.48",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Enemies emerge everywhere. Stagnation starts seemi…"
-      },
-      {
-        "title": "Inflame",
-        "releaseDate": "2021",
-        "rating": "4.35",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Invasions and sabotage. Two civilizations doing an…"
-      },
-      {
-        "title": "Invent",
-        "releaseDate": "2022",
-        "rating": "4.33",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Class secrets revealed. A large Shoe to fill. Peac…"
-      },
-      {
-        "title": "Implode",
-        "releaseDate": "2022",
-        "rating": "4.38",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "The Dwarves want to fight. They are ordered to esca…"
-      },
-      {
-        "title": "Tenacity",
-        "releaseDate": "2023",
-        "rating": "4.31",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Resources? Zilch. Shelter? Ha. Monsters? Hungry, a…"
-      },
-      {
-        "title": "Thesaurize",
-        "releaseDate": "2023",
-        "rating": "4.41",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Life smashing your walls? Build them taller. Then …"
-      },
-      {
-        "title": "Thunderplump",
-        "releaseDate": "2023",
-        "rating": "4.46",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "A challenge is issued. The clouds part. That is no …"
-      },
-      {
-        "title": "Untapped",
-        "releaseDate": "2025",
-        "rating": "4.40",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "He came back for some easy wins. Midgard came back…"
-      },
-      {
-        "title": "Unmapped: An Epic Fantasy LitRPG Adventure",
-        "releaseDate": null,
-        "rating": "4.50",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Resume this action-packed LitRPG progression fanta…"
+        "read": false
       }
     ]
   },
