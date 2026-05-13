@@ -164,6 +164,9 @@
   .book-header-row span:nth-child(2) { text-align: center; }
   .book-header-row span:nth-child(4),
   .book-header-row span:nth-child(5) { text-align: center; }
+  .header-toggle { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; }
+  .header-toggle input { width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); }
+  .header-toggle label { font-size: 0.65rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.8px; cursor: pointer; }
   .book-item {
     display: grid;
     grid-template-columns: 32px 40px 1fr auto auto;
@@ -595,7 +598,11 @@ function render() {
       </div>
       <div class="books-panel">
         <div class="books-panel-inner">
-          <div class="book-header-row"><span>Done</span><span>DL</span><span>Title</span><span>Rating</span><span>GR</span></div>
+          <div class="book-header-row">
+            <span class="header-toggle"><input type="checkbox" ${s.books.every(b=>b.doneReading)?'checked':''} onchange="toggleAllDone(${idx},this.checked)"><label>Done</label></span>
+            <span class="header-toggle"><input type="checkbox" ${s.books.every(b=>b.downloaded)?'checked':''} onchange="toggleAllDL(${idx},this.checked)"><label>DL</label></span>
+            <span>Title</span><span>Rating</span><span>GR</span>
+          </div>
           ${booksHtml}
         </div>
       </div>
@@ -612,6 +619,20 @@ function selectAllBooks(idx) {
     b.doneReading = !allDone;
     b.downloaded = !allDone;
   });
+  saveData();
+  render();
+}
+function toggleAllDone(idx, checked) {
+  const s = data[idx];
+  if (!s || !s.books) return;
+  s.books.forEach(b => { b.doneReading = checked; });
+  saveData();
+  render();
+}
+function toggleAllDL(idx, checked) {
+  const s = data[idx];
+  if (!s || !s.books) return;
+  s.books.forEach(b => { b.downloaded = checked; });
   saveData();
   render();
 }
