@@ -144,9 +144,29 @@
   }
   .books-panel-inner { padding: 12px 18px 16px 18px; }
 
+  .book-header-row {
+    display: grid;
+    grid-template-columns: 32px 40px 1fr auto auto;
+    gap: 12px;
+    padding: 6px 8px 4px 8px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+  }
+  .book-header-row span {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .book-header-row span:nth-child(1),
+  .book-header-row span:nth-child(2) { text-align: center; }
+  .book-header-row span:nth-child(4),
+  .book-header-row span:nth-child(5) { text-align: center; }
   .book-item {
     display: grid;
-    grid-template-columns: 32px 1fr auto auto auto;
+    grid-template-columns: 32px 40px 1fr auto auto;
     gap: 12px;
     align-items: start;
     padding: 10px 8px;
@@ -209,6 +229,13 @@
   }
   .book-desc.open { max-height: 500px; margin-top: 6px; }
   .book-desc-text { padding: 10px 14px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--accent); }
+  .dl-checkbox { position: relative; width: 24px; height: 24px; margin: 0 auto; }
+  .dl-checkbox input { position: absolute; opacity: 0; width: 100%; height: 100%; cursor: pointer; z-index: 1; }
+  .dl-checkbox .checkmark { position: absolute; top: 0; left: 0; width: 24px; height: 24px; background: var(--surface); border: 2px solid var(--border); border-radius: 6px; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+  .dl-checkbox input:checked + .checkmark { background: #3b82f6; border-color: #3b82f6; }
+  .dl-checkbox .checkmark::after { content: '💾'; font-size: 12px; opacity: 0; transition: opacity 0.15s; }
+  .dl-checkbox input:checked + .checkmark::after { opacity: 1; }
+  .dl-checkbox input:focus-visible + .checkmark { box-shadow: 0 0 0 2px rgba(59,130,246,0.3); }
 
   /* Modal */
   .modal-overlay {
@@ -247,6 +274,23 @@
   .rating-btn:hover { border-color: var(--text2); }
   .rating-btn.selected { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
   .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 24px; }
+  .modal-actions.full-width { justify-content: stretch; }
+  .modal-actions.full-width button { flex: 1; text-align: center; padding: 12px; font-size: 1rem; }
+  .instructions-box {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; margin: 16px 0;
+    font-size: 0.85rem; color: var(--text2); line-height: 1.7;
+  }
+  .instructions-box code {
+    background: var(--surface); padding: 2px 8px; border-radius: 4px;
+    font-family: 'SF Mono', 'Fira Code', monospace; color: var(--green); font-size: 0.85rem;
+  }
+  .instructions-box .cmd {
+    display: block; margin: 8px 0; padding: 10px 14px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    font-family: 'SF Mono', 'Fira Code', monospace; color: var(--green);
+    font-size: 0.9rem; user-select: all;
+  }
   .gr-lookup-row { display: flex; gap: 8px; align-items: flex-end; }
   .gr-lookup-row .form-group { flex: 1; }
 
@@ -254,10 +298,12 @@
   @media (max-width: 768px) {
     .series-header { grid-template-columns: 1fr auto; gap: 8px; padding: 12px 14px; }
     .series-books-read, .gr-rating, .series-actions { display: none; }
-    .book-item { grid-template-columns: 28px 1fr auto; gap: 8px; }
+    .book-item { grid-template-columns: 28px 30px 1fr auto; gap: 8px; }
+    .book-header-row { display: none; }
     .book-meta { display: none; }
   }
 </style>
+  <script src="source-data.js"></script>
 </head>
 <body>
 
@@ -280,6 +326,8 @@
         <option value="unrated">Unrated</option>
       </select>
       <button id="exportBtn" class="secondary">⬇ Export</button>
+      <button id="saveBtn" class="primary" title="Save all changes to data.json file">💾 Save</button>
+      <button id="resetBtn" class="secondary" title="Reset to source data (data.json), clearing local cache">🔄 Reset</button>
       <button id="importBtn" class="secondary">⬆ Import</button>
       <button id="addBtn">+ Add Series</button>
     </div>
@@ -287,6 +335,34 @@
 
   <div class="stats" id="stats"></div>
   <div class="series-list" id="seriesList"></div>
+</div>
+
+<!-- Save Server Modal -->
+<div class="modal-overlay" id="saveModal">
+  <div class="modal">
+    <h2>💾 Save to File</h2>
+    <p style="color:var(--text2);font-size:0.9rem;margin-bottom:12px">
+      To save directly to <code>data.json</code> and <code>source-data.js</code>, you need the local server running.
+    </p>
+    <div class="instructions-box">
+      <strong>1. Open a terminal</strong> and navigate to the project folder:
+      <span class="cmd">cd ~/Projects/audiobook-tracker</span>
+      <strong>2. Start the server:</strong>
+      <span class="cmd">python3 server.py</span>
+      <strong>3. Open in browser:</strong>
+      <span class="cmd">http://localhost:8420</span>
+      <br>
+      <span style="color:var(--text3)">The server watches for POST <code>/api/save</code> and writes both files atomically.</span>
+    </div>
+    <p style="color:var(--text3);font-size:0.8rem;margin-bottom:12px">
+      💡 <strong>Tip:</strong> Once the server is running, the 💾 Save button in the header writes directly — no modal needed.
+    </p>
+    <div class="modal-actions full-width">
+      <button class="secondary" id="saveModalClose">Cancel</button>
+      <button id="saveModalDownload" class="secondary">⬇ Download JSON</button>
+      <button id="saveModalRetry">🔄 Try Save Again</button>
+    </div>
+  </div>
 </div>
 
 <!-- Edit/Add Modal -->
@@ -336,20 +412,49 @@ let expandedSeries = new Set();
 let openDescs = new Set();
 
 // --- Data ---
+const DATA_VERSION = 4; // bump this when data.json changes to force reload
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved) {
+  const savedVersion = parseInt(localStorage.getItem(STORAGE_KEY + '_version') || '0', 10);
+  if (saved && savedVersion >= DATA_VERSION) {
     try {
       data = JSON.parse(saved);
-      // If stored data has no books arrays, discard and fetch fresh
-      if (data.length && !data.some(d => d.books && d.books.length)) {
-        console.log('Stored data missing books, fetching fresh from data.json');
-        data = [];
-      }
+      return render(); // use cached version with user edits
     } catch(e) { data = []; }
   }
-  if (!data.length) {
-    fetch('data.json').then(r => r.json()).then(json => { data = json; saveData(); render(); }).catch(() => render());
+  // Load from embedded source data (works with file:// protocol)
+  if (window.SOURCE_DATA) {
+    const json = JSON.parse(JSON.stringify(window.SOURCE_DATA)); // deep clone
+    // Merge user state from old save if available
+    if (saved) {
+      try {
+        const old = JSON.parse(saved);
+        const oldMap = {};
+        old.forEach(s => { oldMap[s.title] = {}; (s.books||[]).forEach(b => { oldMap[s.title][b.title] = b; }); });
+        json.forEach(s => {
+          const omap = oldMap[s.title];
+          if (!omap) return;
+          (s.books||[]).forEach(b => {
+            const ob = omap[b.title];
+            if (ob) {
+              if (ob.doneReading !== undefined) b.doneReading = ob.doneReading;
+              if (ob.downloaded !== undefined) b.downloaded = ob.downloaded;
+              if (ob.userRating) b.userRating = ob.userRating;
+              if (ob.review) b.review = ob.review;
+            }
+          });
+        });
+      } catch(e) {}
+    }
+    data = json;
+    localStorage.setItem(STORAGE_KEY + '_version', DATA_VERSION);
+    saveData();
+    render();
+  } else {
+    // Fallback: try fetch for http:// servers
+    fetch('data.json?' + Date.now()).then(r => r.json()).then(json => {
+      data = json; saveData(); render();
+    }).catch(() => render());
   }
 }
 function saveData() { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
@@ -409,12 +514,14 @@ function renderStats() {
   const reading = data.filter(s => s.status === 'reading').length;
   const complete = data.filter(s => s.status === 'complete').length;
   const totalBooks = data.reduce((sum, s) => sum + getDoneCount(s), 0);
+  const totalDownloaded = data.reduce((sum, s) => sum + (s.books||[]).filter(b => b.downloaded).length, 0);
   const rated = data.filter(s => s.myRating).length;
   document.getElementById('stats').innerHTML = `
     <div class="stat-card"><div class="label">Series</div><div class="value">${total}</div></div>
     <div class="stat-card"><div class="label">Reading</div><div class="value">${reading}</div></div>
     <div class="stat-card"><div class="label">Complete</div><div class="value">${complete}</div></div>
     <div class="stat-card"><div class="label">Books Read</div><div class="value">${totalBooks}</div></div>
+    <div class="stat-card"><div class="label">Downloaded</div><div class="value">${totalDownloaded}</div></div>
     <div class="stat-card"><div class="label">Rated</div><div class="value">${rated}</div></div>
   `;
 }
@@ -444,22 +551,25 @@ function render() {
         const bRating = b.rating ? `<span class="book-rating">⭐ ${b.rating}</span>` : '';
         const bDate = b.releaseDate ? `<span>${esc(b.releaseDate)}</span>` : '';
         const bUrl = b.url ? `<a href="${esc(b.url)}" target="_blank" class="book-external-link">↗</a>` : '';
+        const dlCheckbox = `<label class="dl-checkbox" title="Downloaded"><input type="checkbox" ${b.downloaded?'checked':''} onchange="toggleBookDownloaded(${idx},${bi},this.checked)"><span class="checkmark"></span></label>`;
+        const grBookUrl = gr.url ? `<a href="${esc(gr.url)}" target="_blank" class="book-external-link" title="Goodreads">GR ↗</a>` : '';
         const descId = `desc-${bKey}`;
         const descHtml = b.description
-          ? `<div class="book-desc-toggle"><div class="book-desc ${descOpen?'open':''}" id="${descId}"><div class="book-desc-text">${esc(b.description)}</div></div></div>`
+          ? `<div class="book-desc-toggle" style="grid-column: 3 / -1"><div class="book-desc ${descOpen?'open':''}" id="${descId}"><div class="book-desc-text">${esc(b.description)}</div></div></div>`
           : '';
 
         return `<div class="book-item ${isDone ? 'done-reading' : ''}">
-          <label class="book-checkbox" title="Mark as read">
+          <label class="book-checkbox" title="Mark as done reading">
             <input type="checkbox" ${isDone?'checked':''} onchange="toggleBookRead(${idx},${bi},this.checked)">
             <span class="checkmark"></span>
           </label>
+          <div style="text-align:center">${dlCheckbox}</div>
           <div style="min-width:0">
             <div class="book-title" onclick="toggleDesc('${bKey}')">${esc(b.title)}</div>
-            <div class="book-meta">${bDate}${bRating}</div>
+            <div class="book-meta">${bDate}</div>
           </div>
-          ${bRating ? `<div class="book-rating">⭐ ${b.rating}</div>` : ''}
-          ${bUrl}
+          ${bRating ? `<div class="book-rating">⭐ ${b.rating}</div>` : '<div></div>'}
+          ${grBookUrl ? `<div>${grBookUrl}</div>` : '<div></div>'}
           ${descHtml}
         </div>`;
       }).join('');
@@ -478,12 +588,14 @@ function render() {
         <div>${s.myRating ? `<span class="rating-badge rating-${s.myRating}">${s.myRating}</span>` : '—'}</div>
         <div>${grRating} ${grLink}</div>
         <div style="display:flex;gap:8px;align-items:center">
+          <button class="secondary" onclick="event.stopPropagation();selectAllBooks(${idx})" style="padding:5px 10px;font-size:0.8rem" title="Check all Done + DL for this series">✅ All</button>
           <button class="secondary" onclick="event.stopPropagation();editSeries(${idx})" style="padding:5px 10px;font-size:0.8rem">Edit</button>
           <div class="expand-icon">▶</div>
         </div>
       </div>
       <div class="books-panel">
         <div class="books-panel-inner">
+          <div class="book-header-row"><span>Done</span><span>DL</span><span>Title</span><span>Rating</span><span>GR</span></div>
           ${booksHtml}
         </div>
       </div>
@@ -492,6 +604,17 @@ function render() {
 }
 
 // --- Interactions ---
+function selectAllBooks(idx) {
+  const s = data[idx];
+  if (!s || !s.books) return;
+  const allDone = s.books.every(b => b.doneReading && b.downloaded);
+  s.books.forEach(b => {
+    b.doneReading = !allDone;
+    b.downloaded = !allDone;
+  });
+  saveData();
+  render();
+}
 function toggleSeries(idx) {
   if (expandedSeries.has(idx)) expandedSeries.delete(idx); else expandedSeries.add(idx);
   render();
@@ -520,6 +643,14 @@ function toggleBookRead(sIdx, bIdx, checked) {
       const ofEl = card.querySelector('.series-books-read > div:last-child');
       if (ofEl) ofEl.textContent = 'of ' + total;
     }
+  }
+}
+
+function toggleBookDownloaded(sIdx, bIdx, checked) {
+  if (data[sIdx] && data[sIdx].books && data[sIdx].books[bIdx] !== undefined) {
+    data[sIdx].books[bIdx].downloaded = checked;
+    saveData();
+    renderStats();
   }
 }
 
@@ -584,6 +715,61 @@ document.getElementById('cancelBtn').addEventListener('click', closeModal);
 document.getElementById('saveBtn').addEventListener('click', saveSeries);
 document.getElementById('deleteBtn').addEventListener('click', deleteSeries);
 document.getElementById('exportBtn').addEventListener('click', exportJSON);
+async function tryServerSave() {
+  const btn = document.getElementById('saveBtn');
+  btn.disabled = true; btn.textContent = '⏳ Saving...';
+  try {
+    const resp = await fetch('/api/save', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    });
+    if (resp.ok) {
+      btn.textContent = '✅ Saved!';
+      setTimeout(() => { btn.textContent = '💾 Save'; btn.disabled = false; }, 2000);
+      return true;
+    } else {
+      throw new Error('Server error');
+    }
+  } catch(e) {
+    btn.textContent = '💾 Save'; btn.disabled = false;
+    return false;
+  }
+}
+
+document.getElementById('saveBtn').addEventListener('click', async () => {
+  const ok = await tryServerSave();
+  if (!ok) {
+    document.getElementById('saveModal').classList.add('active');
+  }
+});
+document.getElementById('saveModalClose').addEventListener('click', () => {
+  document.getElementById('saveModal').classList.remove('active');
+});
+document.getElementById('saveModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) document.getElementById('saveModal').classList.remove('active');
+});
+document.getElementById('saveModalDownload').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = 'data.json'; a.click();
+  document.getElementById('saveModal').classList.remove('active');
+});
+document.getElementById('saveModalRetry').addEventListener('click', async () => {
+  document.getElementById('saveModal').classList.remove('active');
+  const ok = await tryServerSave();
+  if (!ok) {
+    document.getElementById('saveModal').classList.add('active');
+  }
+});
+document.getElementById('resetBtn').addEventListener('click', () => {
+  if (confirm('Reset all data to source (data.json)? Your local changes will be lost.')) {
+    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(STORAGE_KEY + '_version');
+    data = [];
+    loadData();
+  }
+});
 document.getElementById('importBtn').addEventListener('click', () => document.getElementById('fileInput').click());
 document.getElementById('fileInput').addEventListener('change', e => { if (e.target.files[0]) importJSON(e.target.files[0]); e.target.value=''; });
 document.getElementById('searchBox').addEventListener('input', render);
