@@ -858,6 +858,7 @@ function toggleBookRead(sIdx, bIdx, checked) {
   if (data[sIdx] && data[sIdx].books && data[sIdx].books[bIdx] !== undefined) {
     data[sIdx].books[bIdx].doneReading = checked;
     saveData();
+    renderDashboard();
     // Update UI without full re-render to preserve scroll
     const cards = Array.from(document.querySelectorAll('.series-card'));
     const item = cards[cards.findIndex(c => c.dataset.idx == sIdx)]?.querySelectorAll('.book-item')[bIdx];
@@ -880,6 +881,7 @@ function toggleBookDownloaded(sIdx, bIdx, checked) {
   if (data[sIdx] && data[sIdx].books && data[sIdx].books[bIdx] !== undefined) {
     data[sIdx].books[bIdx].downloaded = checked;
     saveData();
+    renderDashboard();
     renderStats();
   }
 }
