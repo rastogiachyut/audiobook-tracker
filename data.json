@@ -17,7 +17,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Lives are a currency, and Noah Vines is rich. After standing around in the afterlife for thousands of years, Noah steals a second chance at life and is reborn into the body of a dying magic school professor."
       },
@@ -26,7 +26,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Father may have been prepared to meet a demon, but Noah has grown far stronger than anyone anticipated."
       },
@@ -35,7 +35,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Survival Exam is over and Noah's group have moved deeper into the academy."
       },
@@ -44,7 +44,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Head of the Linwick Family has sent assassins after Noah."
       },
@@ -53,7 +53,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Noah and his allies continue to grow stronger, but the threats against them escalate."
       },
@@ -62,7 +62,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Demon Realm isn't ready for Spider."
       },
@@ -71,7 +71,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Wizen is out of places to run. Noah carved his way through enemies to confront him."
       },
@@ -113,7 +113,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Wilds relentlessly reclaim all things. Humanity shelters within their cities."
       },
@@ -122,7 +122,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Wilds reclaim all things. Humanity shelters within their cities. An initiate must learn to survive."
       },
@@ -131,7 +131,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The world reclaims all things. An acolyte continues their training within the city's protective walls."
       },
@@ -140,7 +140,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The world reclaims all things. A scholar delves deeper into the mysteries of magic and survival."
       },
@@ -149,7 +149,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Wilds reclaim all things. Humanity shelters within their cities."
       },
@@ -158,7 +158,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The iron-clad reality of the world relentlessly confronts those who would challenge it. A Grand Magus rises."
       },
@@ -167,7 +167,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "A voyageur ventures beyond the safety of the city walls into the untamed Wilds."
       },
@@ -176,7 +176,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The iron-clad Reality of the world will not be denied. A savant pushes the boundaries of knowledge."
       },
@@ -185,7 +185,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The iron-clad Reality of the world cannot be denied. A magister wields unprecedented power."
       },
@@ -194,7 +194,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "An ascendant rises to face the ultimate challenge of the iron-clad world."
       },
@@ -203,7 +203,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Omnibus collection of the first five books of the Millennial Mage series."
       },
@@ -212,7 +212,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Omnibus collection of books six through ten of the Millennial Mage series."
       },
@@ -231,7 +231,7 @@
     "title": "Portal to Nova Roma",
     "author": "J.R. Mathews",
     "booksRead": null,
-    "status": "reading",
+    "status": "lost-interest",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -305,7 +305,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "On just another average day, Jake finds himself in a universe-spanning tutorial."
       },
@@ -314,7 +314,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Tutorial has progressed in unexpected ways as Jake continues to fight for survival."
       },
@@ -323,7 +323,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Finally back on Earth, Jake has to adapt and evolve in a changed world."
       },
@@ -332,7 +332,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Now in D-grade, Jake prepares to face even stronger enemies and challenges."
       },
@@ -341,7 +341,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The first major system event has arrived as all the races prepare for war."
       },
@@ -350,7 +350,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Back from the Treasure Hunt, it's time to explore new worlds and grow stronger."
       },
@@ -359,7 +359,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Having arrived at the Order of the Malefic Viper, Jake begins his training."
       },
@@ -368,7 +368,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Enjoying his time in the evil Order of the Malefic Viper, Jake continues to grow."
       },
@@ -377,7 +377,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Book 9 of hit Primal Hunter LitRPG series."
       },
@@ -386,7 +386,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "It's finally Nevermore time, as Jake and friends dive into the grand tournament."
       },
@@ -395,7 +395,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With Nevermore in full swing, the competition for the top intensifies."
       },
@@ -404,7 +404,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With only one Challenge Dungeon left, Nevermore is reaching its climax."
       },
@@ -2157,7 +2157,7 @@
     "title": "The Fatemarked Epic",
     "author": "David Estes",
     "booksRead": null,
-    "status": "reading",
+    "status": "lost-interest",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -2939,7 +2939,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "A young man discovers an extraordinary power that will change his world forever."
       },
@@ -2948,7 +2948,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With his newfound abilities, the summoner must rise to meet greater challenges."
       }
@@ -3189,7 +3189,7 @@
     "title": "Nova Terra",
     "author": "Seth Ring",
     "booksRead": null,
-    "status": "reading",
+    "status": "lost-interest",
     "myRating": null,
     "myReview": null,
     "goodreads": {

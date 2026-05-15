@@ -1016,7 +1016,18 @@ document.getElementById('resetBtn').addEventListener('click', () => {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(STORAGE_KEY + '_version');
     data = [];
-    loadData();
+    // Load fresh from source data WITHOUT merging old state
+    if (window.SOURCE_DATA) {
+      data = JSON.parse(JSON.stringify(window.SOURCE_DATA));
+    } else {
+      fetch('data.json?' + Date.now()).then(r => r.json()).then(json => {
+        data = json; saveData(); render();
+      }).catch(() => render());
+      return;
+    }
+    localStorage.setItem(STORAGE_KEY + '_version', DATA_VERSION);
+    saveData();
+    render();
   }
 });
 document.getElementById('importBtn').addEventListener('click', () => document.getElementById('fileInput').click());
