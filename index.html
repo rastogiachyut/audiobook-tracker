@@ -668,7 +668,15 @@ function renderDashboard() {
 }
 
 function scrollToSeries(idx) {
-  const card = document.querySelector(`.series-card[data-idx="${idx}"]`);
+  let card = document.querySelector(`.series-card[data-idx="${idx}"]`);
+  // If card not visible due to filters, clear filters first
+  if (!card) {
+    document.getElementById('searchBox').value = '';
+    document.getElementById('statusFilter').value = 'all';
+    document.getElementById('ratingFilter').value = 'all';
+    render();
+    card = document.querySelector(`.series-card[data-idx="${idx}"]`);
+  }
   if (card) {
     if (!expandedSeries.has(idx)) toggleSeries(idx);
     card.scrollIntoView({ behavior: 'smooth', block: 'center' });
