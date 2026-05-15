@@ -440,6 +440,7 @@
     <div class="dashboard-header" onclick="toggleDashboard()">
       <h2>📊 Dashboard <span class="collapse-icon">▼</span></h2>
       <span id="dashSummary" style="font-size:0.95rem;color:var(--text2)"></span>
+      <button class="secondary" style="padding:4px 10px;font-size:0.8rem;margin-left:auto" onclick="event.stopPropagation();renderDashboard();renderStats();">🔄 Refresh</button>
     </div>
     <div class="dashboard-body" id="dashboardBody"></div>
   </div>
