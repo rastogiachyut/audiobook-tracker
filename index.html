@@ -603,11 +603,10 @@ function toggleDashboard() {
 
 function renderDashboard() {
   const wantToRead = data.filter(s => {
-    if (isLostInterest(s)) return false;
-    if (s.status !== 'reading' && s.status !== 'planned' && s.status !== 'waiting') return false;
-    // Hide if all books are both downloaded and done reading
-    if (s.books && s.books.length && s.books.every(b => b.downloaded && b.doneReading)) return false;
-    return true;
+    if (isDropped(s)) return false;
+    if (!s.books || !s.books.length) return false;
+    // Only show series with downloaded books that haven't been read yet
+    return s.books.some(b => b.downloaded && !b.doneReading);
   });
   const dropped = data.filter(s => isDropped(s));
   const needDownload = data.filter(s => {
@@ -627,12 +626,12 @@ function renderDashboard() {
 
   const wantHtml = wantToRead.length
     ? wantToRead.map(s => {
-        const done = getDoneCount(s);
+        const dlUnread = (s.books||[]).filter(b => b.downloaded && !b.doneReading).length;
         const total = getTotalBooks(s);
         return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
           <span class="status-dot ${s.status}"></span>
           <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
-          <span class="dash-detail">${done}/${total}</span>
+          <span class="dash-detail">${dlUnread} ready / ${total}</span>
         </div>`;
       }).join('')
     : '<div class="dash-empty">Nothing in the queue 🎉</div>';
