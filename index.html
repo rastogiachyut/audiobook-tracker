@@ -28,6 +28,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg); color: var(--text);
     min-height: 100vh; padding: 20px;
+    font-size: 17px;
   }
   .container { max-width: 1200px; margin: 0 auto; }
 
@@ -36,17 +37,17 @@
     display: flex; justify-content: space-between; align-items: center;
     margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
   }
-  h1 { font-size: 1.5rem; font-weight: 700; }
+  h1 { font-size: 1.75rem; font-weight: 700; }
   .header-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .search-box, .filter-select {
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 8px; padding: 8px 14px; color: var(--text); font-size: 0.9rem;
   }
-  .search-box { width: 220px; }
+  .search-box { width: 240px; }
   .search-box::placeholder { color: var(--text2); }
   button {
     background: var(--accent); color: white; border: none; border-radius: 8px;
-    padding: 8px 16px; font-size: 0.9rem; cursor: pointer;
+    padding: 8px 16px; font-size: 1rem; cursor: pointer;
     transition: background 0.2s; font-weight: 500;
   }
   button:hover { background: var(--accent-hover); }
@@ -61,8 +62,8 @@
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 10px; padding: 12px 18px; min-width: 100px;
   }
-  .stat-card .label { font-size: 0.7rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
-  .stat-card .value { font-size: 1.3rem; font-weight: 700; margin-top: 2px; }
+  .stat-card .label { font-size: 0.8rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-card .value { font-size: 1.5rem; font-weight: 700; margin-top: 2px; }
 
   /* Series List */
   .series-list { display: flex; flex-direction: column; gap: 6px; }
@@ -75,6 +76,29 @@
   }
   .series-card:hover { border-color: var(--accent); }
   .series-card.expanded { border-color: var(--accent); }
+
+  /* Status-colored left border on series card */
+  .series-card { border-left: 4px solid transparent; }
+  .series-card[data-status="reading"] { border-left-color: var(--green); }
+  .series-card[data-status="complete"] { border-left-color: var(--blue); }
+  .series-card[data-status="waiting"] { border-left-color: #fb923c; }
+  .series-card[data-status="dropped"] { border-left-color: var(--red); }
+  .series-card[data-status="lost-interest"] { border-left-color: #6b7280; }
+  .series-card[data-status="planned"] { border-left-color: var(--yellow); }
+
+  /* Status-colored background tint on header */
+  .series-card[data-status="reading"] .series-header { background: rgba(74,222,128,0.04); }
+  .series-card[data-status="complete"] .series-header { background: rgba(96,165,250,0.04); }
+  .series-card[data-status="waiting"] .series-header { background: rgba(251,146,60,0.04); }
+  .series-card[data-status="dropped"] .series-header { background: rgba(248,113,113,0.04); }
+  .series-card[data-status="lost-interest"] .series-header { background: rgba(107,114,128,0.04); }
+  .series-card[data-status="planned"] .series-header { background: rgba(251,191,36,0.04); }
+  .series-card[data-status="reading"] .series-header:hover { background: rgba(74,222,128,0.08); }
+  .series-card[data-status="complete"] .series-header:hover { background: rgba(96,165,250,0.08); }
+  .series-card[data-status="waiting"] .series-header:hover { background: rgba(251,146,60,0.08); }
+  .series-card[data-status="dropped"] .series-header:hover { background: rgba(248,113,113,0.08); }
+  .series-card[data-status="lost-interest"] .series-header:hover { background: rgba(107,114,128,0.08); }
+  .series-card[data-status="planned"] .series-header:hover { background: rgba(251,191,36,0.08); }
 
   /* Series Header Row */
   .series-header {
@@ -89,27 +113,29 @@
   .series-header:hover { background: var(--surface2); }
 
   .series-title-area { min-width: 0; }
-  .series-title { font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .series-author { font-size: 0.8rem; color: var(--text2); margin-top: 2px; }
+  .series-title { font-weight: 600; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .series-author { font-size: 0.9rem; color: var(--text2); margin-top: 2px; }
 
   .series-books-read {
-    font-size: 0.8rem; color: var(--text2); text-align: center; white-space: nowrap;
+    font-size: 0.9rem; color: var(--text2); text-align: center; white-space: nowrap;
   }
-  .series-books-read .count { font-weight: 700; color: var(--green); font-size: 1rem; }
+  .series-books-read .count { font-weight: 700; color: var(--green); font-size: 1.15rem; }
 
   .status-badge {
     display: inline-block; padding: 3px 10px; border-radius: 20px;
-    font-size: 0.75rem; font-weight: 600; text-transform: capitalize; white-space: nowrap;
+    font-size: 0.85rem; font-weight: 600; text-transform: capitalize; white-space: nowrap;
   }
   .status-reading { background: rgba(74,222,128,0.15); color: var(--green); }
   .status-complete { background: rgba(96,165,250,0.15); color: var(--blue); }
+  .status-waiting { background: rgba(251,146,60,0.15); color: #fb923c; }
   .status-dropped { background: rgba(248,113,113,0.15); color: var(--red); }
+  .status-lost-interest { background: rgba(107,114,128,0.2); color: #9ca3af; }
   .status-planned { background: rgba(251,191,36,0.15); color: var(--yellow); }
 
   .rating-badge {
     display: inline-flex; align-items: center; justify-content: center;
     width: 32px; height: 32px; border-radius: 8px;
-    font-weight: 800; font-size: 0.85rem;
+    font-weight: 800; font-size: 1rem;
   }
   .rating-S { background: rgba(255,215,0,0.2); color: #ffd700; }
   .rating-A { background: rgba(74,222,128,0.15); color: var(--green); }
@@ -119,13 +145,13 @@
   .rating-E { background: rgba(248,113,113,0.15); color: var(--red); }
   .rating-F { background: rgba(153,27,27,0.3); color: #991b1b; }
 
-  .gr-rating { color: var(--yellow); font-weight: 600; font-size: 0.9rem; }
-  .gr-link { color: var(--accent); text-decoration: none; font-size: 0.8rem; margin-left: 4px; }
+  .gr-rating { color: var(--yellow); font-weight: 600; font-size: 1.05rem; }
+  .gr-link { color: var(--accent); text-decoration: none; font-size: 0.9rem; margin-left: 4px; }
   .gr-link:hover { text-decoration: underline; }
 
   .expand-icon {
     width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
-    color: var(--text2); transition: transform 0.2s; font-size: 0.8rem;
+    color: var(--text2); transition: transform 0.2s; font-size: 0.95rem;
   }
   .series-card.expanded .expand-icon { transform: rotate(90deg); }
 
@@ -153,7 +179,7 @@
     margin-bottom: 4px;
   }
   .book-header-row span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--text2);
     text-transform: uppercase;
@@ -166,7 +192,7 @@
   .book-header-row span:nth-child(5) { text-align: center; }
   .header-toggle { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; }
   .header-toggle input { width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent); }
-  .header-toggle label { font-size: 0.65rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.8px; cursor: pointer; }
+  .header-toggle label { font-size: 0.75rem; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 0.8px; cursor: pointer; }
   .book-item {
     display: grid;
     grid-template-columns: 32px 40px 1fr auto auto;
@@ -205,19 +231,19 @@
   .book-item.done-reading .book-title { text-decoration: line-through; color: var(--text2); }
 
   .book-title {
-    font-size: 0.9rem; font-weight: 500; cursor: pointer;
+    font-size: 1.05rem; font-weight: 500; cursor: pointer;
     transition: color 0.15s;
   }
   .book-title:hover { color: var(--accent); }
 
   .book-meta {
-    font-size: 0.75rem; color: var(--text3); margin-top: 2px;
+    font-size: 0.85rem; color: var(--text3); margin-top: 2px;
     display: flex; gap: 12px; flex-wrap: wrap;
   }
 
-  .book-rating { font-size: 0.8rem; color: var(--yellow); font-weight: 600; white-space: nowrap; }
+  .book-rating { font-size: 0.95rem; color: var(--yellow); font-weight: 600; white-space: nowrap; }
 
-  .book-external-link { color: var(--accent); text-decoration: none; font-size: 0.8rem; white-space: nowrap; }
+  .book-external-link { color: var(--accent); text-decoration: none; font-size: 0.9rem; white-space: nowrap; }
   .book-external-link:hover { text-decoration: underline; }
 
   /* Book Description Accordion */
@@ -228,7 +254,7 @@
   .book-desc {
     max-height: 0; overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-size: 0.85rem; color: var(--text2); line-height: 1.5;
+    font-size: 1rem; color: var(--text2); line-height: 1.5;
   }
   .book-desc.open { max-height: 500px; margin-top: 6px; }
   .book-desc-text { padding: 10px 14px; background: var(--surface); border-radius: 8px; border-left: 3px solid var(--accent); }
@@ -252,10 +278,10 @@
     border-radius: 16px; padding: 28px; width: 100%; max-width: 560px;
     max-height: 90vh; overflow-y: auto;
   }
-  .modal h2 { margin-bottom: 20px; font-size: 1.2rem; }
+  .modal h2 { margin-bottom: 20px; font-size: 1.4rem; }
   .form-group { margin-bottom: 16px; }
   .form-group label {
-    display: block; font-size: 0.8rem; color: var(--text2);
+    display: block; font-size: 0.9rem; color: var(--text2);
     margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px;
   }
   .form-group input, .form-group select, .form-group textarea {
@@ -270,7 +296,7 @@
   .rating-picker { display: flex; gap: 6px; flex-wrap: wrap; }
   .rating-btn {
     width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
-    border-radius: 8px; font-weight: 800; font-size: 0.9rem; cursor: pointer;
+    border-radius: 8px; font-weight: 800; font-size: 1rem; cursor: pointer;
     background: var(--surface2); border: 2px solid transparent;
     color: var(--text2); transition: all 0.2s;
   }
@@ -278,15 +304,15 @@
   .rating-btn.selected { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
   .modal-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 24px; }
   .modal-actions.full-width { justify-content: stretch; }
-  .modal-actions.full-width button { flex: 1; text-align: center; padding: 12px; font-size: 1rem; }
+  .modal-actions.full-width button { flex: 1; text-align: center; padding: 12px; font-size: 1.1rem; }
   .instructions-box {
     background: var(--surface2); border: 1px solid var(--border);
     border-radius: 10px; padding: 16px; margin: 16px 0;
-    font-size: 0.85rem; color: var(--text2); line-height: 1.7;
+    font-size: 1rem; color: var(--text2); line-height: 1.7;
   }
   .instructions-box code {
     background: var(--surface); padding: 2px 8px; border-radius: 4px;
-    font-family: 'SF Mono', 'Fira Code', monospace; color: var(--green); font-size: 0.85rem;
+    font-family: 'SF Mono', 'Fira Code', monospace; color: var(--green); font-size: 1rem;
   }
   .instructions-box .cmd {
     display: block; margin: 8px 0; padding: 10px 14px;
@@ -297,6 +323,74 @@
   .gr-lookup-row { display: flex; gap: 8px; align-items: flex-end; }
   .gr-lookup-row .form-group { flex: 1; }
 
+  /* Dashboard */
+  .dashboard {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 20px; overflow: hidden;
+  }
+  .dashboard-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 18px; cursor: pointer; user-select: none;
+    transition: background 0.15s;
+  }
+  .dashboard-header:hover { background: var(--surface2); }
+  .dashboard-header h2 { font-size: 1.15rem; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+  .dashboard-header .collapse-icon {
+    font-size: 0.8rem; color: var(--text2); transition: transform 0.2s;
+  }
+  .dashboard.collapsed .collapse-icon { transform: rotate(-90deg); }
+  .dashboard-body {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+    max-height: 600px; overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+    padding: 0 18px 16px 18px;
+  }
+  .dashboard.collapsed .dashboard-body { max-height: 0; padding-top: 0; padding-bottom: 0; }
+  .dash-section { padding: 0 12px; }
+  .dash-section:not(:last-child) { border-right: 1px solid var(--border); }
+  .dash-section-title {
+    font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.5px; color: var(--text2); margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .dash-section-title .count {
+    background: var(--accent-dim); color: var(--accent);
+    font-size: 0.8rem; padding: 1px 8px; border-radius: 10px; font-weight: 600;
+  }
+  .dash-item {
+    display: flex; align-items: center; gap: 8px;
+    padding: 6px 8px; border-radius: 6px; font-size: 0.95rem;
+    cursor: pointer; transition: background 0.15s;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .dash-item:hover { background: var(--surface2); }
+  .dash-item .status-dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  }
+  .dash-item .status-dot.reading { background: var(--green); }
+  .dash-item .status-dot.waiting { background: #fb923c; }
+  .dash-item .status-dot.planned { background: var(--yellow); }
+  .dash-item .status-dot.dropped { background: var(--red); }
+  .dash-item .status-dot.lost-interest { background: #6b7280; }
+  .dash-item .dash-detail { font-size: 0.8rem; color: var(--text3); flex-shrink: 0; }
+  .dash-list { max-height: 200px; overflow-y: auto; }
+  .dash-list::-webkit-scrollbar { width: 4px; }
+  .dash-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  .dash-empty { color: var(--text3); font-size: 0.95rem; padding: 8px; font-style: italic; }
+
+  /* Lost Interest toggle on series header */
+  .lost-interest-toggle {
+    background: none; border: 1px solid var(--border); color: var(--text3);
+    padding: 4px 10px; font-size: 0.8rem; border-radius: 6px;
+    cursor: pointer; transition: all 0.2s; white-space: nowrap;
+  }
+  .lost-interest-toggle:hover { border-color: #6b7280; color: #9ca3af; }
+  .lost-interest-toggle.active {
+    background: rgba(107,114,128,0.2); border-color: #6b7280; color: #9ca3af;
+  }
+  .series-card.lost-interest-card { opacity: 0.55; }
+  .series-card.lost-interest-card:hover { opacity: 0.75; }
+
   /* Responsive */
   @media (max-width: 768px) {
     .series-header { grid-template-columns: 1fr auto; gap: 8px; padding: 12px 14px; }
@@ -304,6 +398,9 @@
     .book-item { grid-template-columns: 28px 30px 1fr auto; gap: 8px; }
     .book-header-row { display: none; }
     .book-meta { display: none; }
+    .dashboard-body { grid-template-columns: 1fr; }
+    .dash-section:not(:last-child) { border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 12px; margin-bottom: 12px; }
+    .lost-interest-toggle { display: none; }
   }
 </style>
   <script src="source-data.js"></script>
@@ -319,7 +416,9 @@
         <option value="all">All Status</option>
         <option value="reading">Reading</option>
         <option value="complete">Complete</option>
+        <option value="waiting">Waiting</option>
         <option value="dropped">Dropped</option>
+        <option value="lost-interest">Lost Interest</option>
         <option value="planned">Planned</option>
       </select>
       <select class="filter-select" id="ratingFilter">
@@ -337,6 +436,13 @@
   </header>
 
   <div class="stats" id="stats"></div>
+  <div class="dashboard" id="dashboard">
+    <div class="dashboard-header" onclick="toggleDashboard()">
+      <h2>📊 Dashboard <span class="collapse-icon">▼</span></h2>
+      <span id="dashSummary" style="font-size:0.95rem;color:var(--text2)"></span>
+    </div>
+    <div class="dashboard-body" id="dashboardBody"></div>
+  </div>
   <div class="series-list" id="seriesList"></div>
 </div>
 
@@ -378,7 +484,9 @@
     <div class="form-group"><label>Status</label>
       <select id="fStatus">
         <option value="reading">Reading</option><option value="complete">Complete</option>
-        <option value="dropped">Dropped</option><option value="planned">Planned</option>
+        <option value="waiting">Waiting</option>
+        <option value="dropped">Dropped</option><option value="lost-interest">Lost Interest</option>
+        <option value="planned">Planned</option>
       </select>
     </div>
     <div class="form-group"><label>My Rating</label>
@@ -413,9 +521,10 @@ let sortKey = 'title';
 let sortAsc = true;
 let expandedSeries = new Set();
 let openDescs = new Set();
+let dashboardCollapsed = false;
 
 // --- Data ---
-const DATA_VERSION = 7; // bump this when data.json changes to force reload
+const DATA_VERSION = 8; // bump this when data.json changes to force reload
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
   const savedVersion = parseInt(localStorage.getItem(STORAGE_KEY + '_version') || '0', 10);
@@ -470,6 +579,104 @@ function importJSON(file) {
   const r = new FileReader();
   r.onload = e => { try { data = JSON.parse(e.target.result); saveData(); render(); } catch(err) { alert('Invalid JSON'); } };
   r.readAsText(file);
+}
+
+// --- Dashboard ---
+function isLostInterest(s) { return s.status === 'lost-interest'; }
+function isDropped(s) { return s.status === 'dropped' || isLostInterest(s); }
+
+function toggleDashboard() {
+  dashboardCollapsed = !dashboardCollapsed;
+  document.getElementById('dashboard').classList.toggle('collapsed', dashboardCollapsed);
+}
+
+function renderDashboard() {
+  const wantToRead = data.filter(s => {
+    if (isLostInterest(s)) return false;
+    if (s.status !== 'reading' && s.status !== 'planned' && s.status !== 'waiting') return false;
+    // Hide if all books are both downloaded and done reading
+    if (s.books && s.books.length && s.books.every(b => b.downloaded && b.doneReading)) return false;
+    return true;
+  });
+  const dropped = data.filter(s => isDropped(s));
+  const needDownload = data.filter(s => {
+    if (isLostInterest(s)) return false;
+    if (!s.books || !s.books.length) return false;
+    return s.books.some(b => !b.downloaded);
+  });
+
+  document.getElementById('dashSummary').textContent =
+    `${wantToRead.length} to read · ${dropped.length} dropped · ${needDownload.length} to download`;
+
+  const wantHtml = wantToRead.length
+    ? wantToRead.map(s => {
+        const done = getDoneCount(s);
+        const total = getTotalBooks(s);
+        return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
+          <span class="status-dot ${s.status}"></span>
+          <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
+          <span class="dash-detail">${done}/${total}</span>
+        </div>`;
+      }).join('')
+    : '<div class="dash-empty">Nothing in the queue 🎉</div>';
+
+  const droppedHtml = dropped.length
+    ? dropped.map(s => {
+        const label = isLostInterest(s) ? 'lost interest' : 'dropped';
+        return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
+          <span class="status-dot ${isLostInterest(s) ? 'lost-interest' : 'dropped'}"></span>
+          <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
+          <span class="dash-detail">${label}</span>
+        </div>`;
+      }).join('')
+    : '<div class="dash-empty">None — good taste!</div>';
+
+  const dlHtml = needDownload.length
+    ? needDownload.map(s => {
+        const missing = (s.books||[]).filter(b => !b.downloaded).length;
+        return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
+          <span class="status-dot ${s.status}"></span>
+          <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
+          <span class="dash-detail">${missing} missing</span>
+        </div>`;
+      }).join('')
+    : '<div class="dash-empty">Everything downloaded ✅</div>';
+
+  document.getElementById('dashboardBody').innerHTML = `
+    <div class="dash-section">
+      <div class="dash-section-title">📖 Want to Read <span class="count">${wantToRead.length}</span></div>
+      <div class="dash-list">${wantHtml}</div>
+    </div>
+    <div class="dash-section">
+      <div class="dash-section-title">🚫 Dropped <span class="count">${dropped.length}</span></div>
+      <div class="dash-list">${droppedHtml}</div>
+    </div>
+    <div class="dash-section">
+      <div class="dash-section-title">📥 Need to Download <span class="count">${needDownload.length}</span></div>
+      <div class="dash-list">${dlHtml}</div>
+    </div>
+  `;
+}
+
+function scrollToSeries(idx) {
+  const card = document.querySelector(`.series-card[data-idx="${idx}"]`);
+  if (card) {
+    if (!expandedSeries.has(idx)) toggleSeries(idx);
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    card.style.boxShadow = '0 0 0 2px var(--accent)';
+    setTimeout(() => { card.style.boxShadow = ''; }, 2000);
+  }
+}
+
+function toggleLostInterest(idx) {
+  const s = data[idx];
+  if (!s) return;
+  if (s.status === 'lost-interest') {
+    s.status = 'reading';
+  } else {
+    s.status = 'lost-interest';
+  }
+  saveData(); render();
 }
 
 // --- Helpers ---
@@ -531,6 +738,7 @@ function renderStats() {
 
 function render() {
   renderStats();
+  renderDashboard();
   const list = document.getElementById('seriesList');
   const filtered = getFiltered();
   if (!filtered.length) { list.innerHTML = '<div style="text-align:center;padding:60px;color:var(--text2)">No series found</div>'; return; }
@@ -580,7 +788,7 @@ function render() {
       booksHtml = '<div style="padding:12px;color:var(--text3);font-size:0.85rem">No books found for this series</div>';
     }
 
-    return `<div class="series-card ${isExpanded?'expanded':''}" data-idx="${idx}">
+    return `<div class="series-card ${isExpanded?'expanded':''} ${isLostInterest(s)?'lost-interest-card':''}" data-idx="${idx}" data-status="${s.status||'reading'}">
       <div class="series-header" onclick="toggleSeries(${idx})">
         <div class="series-title-area">
           <div class="series-title" title="${esc(s.title)}">${dup?'📌 ':''}${esc(s.title)}</div>
@@ -591,8 +799,9 @@ function render() {
         <div>${s.myRating ? `<span class="rating-badge rating-${s.myRating}">${s.myRating}</span>` : '—'}</div>
         <div>${grRating} ${grLink}</div>
         <div style="display:flex;gap:8px;align-items:center">
-          <button class="secondary" onclick="event.stopPropagation();selectAllBooks(${idx})" style="padding:5px 10px;font-size:0.8rem" title="Check all Done + DL for this series">✅ All</button>
-          <button class="secondary" onclick="event.stopPropagation();editSeries(${idx})" style="padding:5px 10px;font-size:0.8rem">Edit</button>
+          <button class="lost-interest-toggle ${isLostInterest(s)?'active':''}" onclick="event.stopPropagation();toggleLostInterest(${idx})" title="${isLostInterest(s)?'Remove lost interest':'Mark as lost interest'}">${isLostInterest(s)?'💀 Lost':'💀'}</button>
+          <button class="secondary" onclick="event.stopPropagation();selectAllBooks(${idx})" style="padding:6px 12px;font-size:0.9rem" title="Check all Done + DL for this series">✅ All</button>
+          <button class="secondary" onclick="event.stopPropagation();editSeries(${idx})" style="padding:6px 12px;font-size:0.9rem">Edit</button>
           <div class="expand-icon">▶</div>
         </div>
       </div>
