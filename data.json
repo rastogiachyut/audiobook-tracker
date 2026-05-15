@@ -464,7 +464,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "With the Path of Ascension finished, the trio must prepare for the coming war."
       },
@@ -473,7 +473,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "With an unexpected temporary addition to the team, Matt continues his ascent."
       },
@@ -482,7 +482,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Training, glory, practicing for war. Shortly after the war, Matt faces new challenges."
       },
@@ -491,7 +491,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "After participating in the Empire's vassal war, Matt returns to training."
       },
@@ -500,7 +500,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Matt, Liz, and Aster are now Tier 10, which means it's time for new challenges."
       },
@@ -509,7 +509,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "In search for greater power, Matt, Liz, and Aster venture into dangerous territory."
       },
@@ -518,7 +518,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Deep inside Minkalla's depths, the team faces their most dangerous challenges yet."
       },
@@ -527,7 +527,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Days and Tiers pass as Matt, Liz, and Aster leave Minkalla behind."
       },
@@ -536,7 +536,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "With Light and Shadow completing the Path of Ascension, new challenges await."
       },
@@ -545,7 +545,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With the Path of Ascension finished, the trio must prepare for the coming war."
       },
@@ -596,7 +596,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -605,7 +605,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -614,7 +614,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -623,7 +623,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "While war rages in Thameland, Alex must navigate the dangers of the City of the Fool."
       },
@@ -632,7 +632,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -641,7 +641,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -650,7 +650,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "A mysterious song holds the key to understanding the Fool's true power."
       },
@@ -659,7 +659,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -668,7 +668,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
@@ -677,7 +677,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       }
@@ -701,7 +701,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Fight, survive, adapt, and rely only on yourself."
       },
@@ -710,7 +710,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "New system? Check. Companions? Check. An accidental interstellar incident? Also check."
       },
@@ -719,7 +719,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "So the first city he traveled to on a new world was not quite what he expected."
       },
@@ -728,7 +728,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "He didn't know he was looking for a home until he found one."
       },
@@ -737,7 +737,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With those he cares about safe and sound, Derek sets out to explore the wider universe."
       },
@@ -746,7 +746,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The raid did not turn out to be what he was expecting."
       },
@@ -755,7 +755,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Since arriving in Cydaria, Derek Hunt has been caught up in one thing after another."
       },
@@ -764,7 +764,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With Alanah having ascended, Derek now has a favor to repay."
       },
@@ -797,7 +797,7 @@
         "releaseDate": null,
         "rating": "4.5",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "He never intended to be a cultivator. The heavens had other plans."
       },
@@ -806,7 +806,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "He left to see the world, but the world is a cruel place for the unprepared."
       },
@@ -815,7 +815,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Sen emerged triumphant, but victory is a double-edged sword."
       },
@@ -824,7 +824,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Time is a cultivator's greatest ally, until it isn't."
       },
@@ -833,7 +833,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Survival rests in the hands of a madwoman."
       },
@@ -842,7 +842,7 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Never owe a fox a favor."
       },
@@ -851,7 +851,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "What does a warrior do when there's nothing to fight?"
       },
@@ -893,7 +893,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Netherworld: it is a hellish landscape inhabited by demons."
       },
@@ -902,7 +902,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Pride and prejudice. Humanity's prejudice against demons, and a demon's pride."
       },
@@ -911,7 +911,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "A Monster Evolution LitRPG. Heretic tells the story of a demon in the mortal realm."
       },
@@ -920,7 +920,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Nightsveil has fallen. Humankind is reeling."
       },
@@ -929,7 +929,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Salvos faces new challenges on the Mountain, where ancient powers stir."
       },
@@ -938,7 +938,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "After surviving an encounter with the Beast, the party regroups."
       },
@@ -947,7 +947,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Defiled threaten everything Salvos has built. She must confront corruption head-on."
       },
@@ -956,7 +956,7 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Artifice reveals hidden machinations behind the war between demons and mortals."
       },
@@ -965,7 +965,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Hollowed by loss, Salvos must find the strength to continue fighting."
       },
@@ -974,7 +974,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "The Swarm descends, threatening to overwhelm everything in its path."
       },
@@ -983,7 +983,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Monsters and matrimony - even a demon deserves a chance at happiness."
       },
@@ -992,7 +992,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Dissolution threatens the very fabric of reality as the conflict reaches its peak."
       },
@@ -1001,7 +1001,7 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Crimson Calamity brings devastation on an unprecedented scale."
       },
@@ -1034,7 +1034,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Reidon Ward will become a god. He doesn't know it yet, but his ability to rapidly learn and adapt makes him extraordinary."
       },
@@ -1043,7 +1043,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Iron Prince will claim his crown. Reidon Ward continues his rise."
       }
@@ -1067,7 +1067,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "A narcissistic dragon discovers the adventuring class system and hires a human thief as his minion."
       },
@@ -1076,7 +1076,7 @@
         "releaseDate": null,
         "rating": "4.2",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Vainqueur and his minion Victor face new challenges in the second installment."
       },
@@ -1085,36 +1085,18 @@
         "releaseDate": null,
         "rating": "4.2",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": false,
         "description": "Vainqueur embarks on a world tour in the third book of the series."
       },
       {
-        "title": "Vainqueur the Dragon #4",
+        "title": "The Last Adventure",
         "releaseDate": null,
         "rating": "4.2",
         "url": null,
         "doneReading": false,
         "downloaded": true,
-        "description": "Being close to godhood sounds nice but it's anything but easy."
-      },
-      {
-        "title": "Vainqueur the Dragon 5",
-        "releaseDate": null,
-        "rating": "4.1",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Vainqueur Knightsbane is your average dragon: a giant, fire-breathing lizard with an obsession for gold."
-      },
-      {
-        "title": "Vainqueur the Dragon 6",
-        "releaseDate": null,
-        "rating": "4.1",
-        "url": null,
-        "doneReading": false,
-        "downloaded": false,
-        "description": "Vainqueur Knightsbane is your average dragon: a giant, fire-breathing lizard with an obsession for gold."
+        "description": "Vainqueur and his long-suffering minion Manuel embark on their grandest, most dangerous quest yet."
       }
     ]
   },
@@ -3642,32 +3624,38 @@
       {
         "title": "Shadeslinger",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": true
       },
       {
         "title": "Black Sand Baron",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": true
       },
       {
         "title": "Gilded Ghost",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": true
       },
       {
         "title": "Shattersoul",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": true
       },
       {
         "title": "Emperor's End",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": false
       },
       {
         "title": "Lunatic's Landing",
         "downloaded": true,
-        "read": false
+        "read": false,
+        "doneReading": false
       }
     ]
   },
