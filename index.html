@@ -602,11 +602,17 @@ function renderDashboard() {
   const needDownload = data.filter(s => {
     if (isLostInterest(s)) return false;
     if (!s.books || !s.books.length) return false;
-    return s.books.some(b => !b.downloaded);
+    // Only show series with unread books that aren't downloaded
+    return s.books.some(b => !b.downloaded && !b.doneReading);
   });
 
+  const totalMissing = data.reduce((sum, s) => {
+    if (isLostInterest(s) || !s.books) return sum;
+    return sum + s.books.filter(b => !b.downloaded).length;
+  }, 0);
+
   document.getElementById('dashSummary').textContent =
-    `${wantToRead.length} to read · ${dropped.length} dropped · ${needDownload.length} to download`;
+    `${wantToRead.length} to read · ${dropped.length} dropped · ${needDownload.length} to download · ${totalMissing} total missing`;
 
   const wantHtml = wantToRead.length
     ? wantToRead.map(s => {
@@ -633,11 +639,13 @@ function renderDashboard() {
 
   const dlHtml = needDownload.length
     ? needDownload.map(s => {
-        const missing = (s.books||[]).filter(b => !b.downloaded).length;
+        const unreadMissing = (s.books||[]).filter(b => !b.downloaded && !b.doneReading).length;
+        const allMissing = (s.books||[]).filter(b => !b.downloaded).length;
+        const detail = allMissing !== unreadMissing ? `${unreadMissing} unread missing (${allMissing} total)` : `${unreadMissing} missing`;
         return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
           <span class="status-dot ${s.status}"></span>
           <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
-          <span class="dash-detail">${missing} missing</span>
+          <span class="dash-detail">${detail}</span>
         </div>`;
       }).join('')
     : '<div class="dash-empty">Everything downloaded ✅</div>';
