@@ -412,10 +412,30 @@
   }
   #scrollTopBtn:hover { background: var(--accent-hover); transform: scale(1.1); }
   #scrollTopBtn.visible { display: flex; }
+  /* Toast notifications */
+  .toast-container { position: fixed; top: 20px; right: 20px; z-index: 10000; display: flex; flex-direction: column; gap: 8px; pointer-events: none; }
+  .toast {
+    pointer-events: auto; padding: 12px 20px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;
+    color: white; opacity: 0; transform: translateX(30px); transition: all 0.3s ease;
+    max-width: 360px; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+  .toast.show { opacity: 1; transform: translateX(0); }
+  .toast.error { background: #dc2626; }
+  .toast.success { background: #16a34a; }
+  .toast.warning { background: #d97706; }
+  .toast.info { background: #2563eb; }
+  .toast.confirm {
+    background: var(--surface2); border: 1px solid var(--border);
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .toast.confirm .toast-msg { color: var(--text); }
+  .toast.confirm .toast-actions { display: flex; gap: 8px; }
+  .toast.confirm .toast-actions button { padding: 4px 12px; font-size: 0.8rem; }
 </style>
   <script src="source-data.js"></script>
 </head>
 <body>
+<div class="toast-container" id="toastContainer"></div>
 
 <div class="container">
   <header>
@@ -588,7 +608,7 @@ function exportJSON() {
 }
 function importJSON(file) {
   const r = new FileReader();
-  r.onload = e => { try { data = JSON.parse(e.target.result); saveData(); render(); } catch(err) { alert('Invalid JSON'); } };
+  r.onload = e => { try { data = JSON.parse(e.target.result); saveData(); render(); } catch(err) { showToast('Invalid JSON file', 'error'); } };
   r.readAsText(file);
 }
 
@@ -956,14 +976,16 @@ function saveSeries() {
       url: document.getElementById('fGrUrl').value.trim() || null,
     }
   };
-  if (!entry.title) { alert('Title is required'); return; }
+  if (!entry.title) { showToast('Title is required', 'warning'); return; }
   if (idx >= 0) data[idx] = entry; else data.push(entry);
   saveData(); render(); closeModal();
 }
 function deleteSeries() {
   const idx = parseInt(document.getElementById('editIndex').value);
-  if (idx >= 0 && confirm(`Delete "${data[idx].title}"?`)) {
-    data.splice(idx, 1); saveData(); render(); closeModal();
+  if (idx >= 0) {
+    showConfirm(`Delete "${data[idx].title}"?`, () => {
+      data.splice(idx, 1); saveData(); render(); closeModal();
+    });
   }
 }
 
@@ -997,7 +1019,10 @@ async function tryServerSave() {
 
 document.getElementById('saveBtn').addEventListener('click', async () => {
   const ok = await tryServerSave();
-  if (!ok) {
+  if (ok) {
+    showToast('Saved to data.json', 'success');
+  } else {
+    showToast('Server save failed — downloading file instead', 'warning');
     document.getElementById('saveModal').classList.add('active');
   }
 });
@@ -1021,11 +1046,10 @@ document.getElementById('saveModalRetry').addEventListener('click', async () => 
   }
 });
 document.getElementById('resetBtn').addEventListener('click', () => {
-  if (confirm('Reset all data to source (data.json)? Your local changes will be lost.')) {
+  showConfirm('Reset all data to source (data.json)? Your local changes will be lost.', () => {
     localStorage.removeItem(STORAGE_KEY);
     localStorage.removeItem(STORAGE_KEY + '_version');
     data = [];
-    // Load fresh from source data WITHOUT merging old state
     if (window.SOURCE_DATA) {
       data = JSON.parse(JSON.stringify(window.SOURCE_DATA));
     } else {
@@ -1049,6 +1073,25 @@ document.querySelectorAll('#myRatingPicker .rating-btn').forEach(b => {
 });
 document.getElementById('modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// Toast notifications
+function showToast(msg, type='info', duration=3000) {
+  const c = document.getElementById('toastContainer');
+  const t = document.createElement('div');
+  t.className = `toast ${type}`;
+  t.textContent = msg;
+  c.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => { t.classList.remove('show'); setTimeout(() => t.remove(), 300); }, duration);
+}
+function showConfirm(msg, onYes) {
+  const c = document.getElementById('toastContainer');
+  const t = document.createElement('div');
+  t.className = 'toast confirm';
+  t.innerHTML = `<div class="toast-msg">${msg}</div><div class="toast-actions"><button class="secondary" onclick="this.closest('.toast').remove()">Cancel</button><button onclick="this.closest('.toast').remove();(${onYes.toString()})()">Confirm</button></div>`;
+  c.appendChild(t);
+  requestAnimationFrame(() => t.classList.add('show'));
+}
 
 loadData(); render();
 
