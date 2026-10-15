@@ -4245,9 +4245,9 @@
   },
   {
     "title": "Regressor Sect Master",
-    "author": "Spaizzzer",
-    "booksRead": 0,
-    "status": "planned",
+    "author": "SpaizZzer",
+    "booksRead": 1,
+    "status": "reading",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -4261,7 +4261,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": ""
       },
