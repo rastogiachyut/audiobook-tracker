@@ -4126,8 +4126,8 @@
   {
     "title": "Tree of Aeons",
     "author": "SpaizZzer",
-    "booksRead": 0,
-    "status": "planned",
+    "booksRead": 3,
+    "status": "reading",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -4141,7 +4141,7 @@
         "releaseDate": "2023",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": ""
       },
@@ -4150,7 +4150,7 @@
         "releaseDate": "2023",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "It’s not easy being the wise magical tree in a world filled with demons and dangerous foes. Matt’s journey to survive in a world filled with heroes and demons continues! Matt now has to guide his growing nation through…"
       },
@@ -4159,7 +4159,7 @@
         "releaseDate": "2024",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "After a long demonic winter, Tree-Tree reawakens and rebuilds. This time, Tree-Tree aims higher, and tries to build something meant to last in a world filled with heroes and demons. Tree-Tree's new growing empire now…"
       },
