@@ -4126,7 +4126,7 @@
   {
     "title": "Tree of Aeons",
     "author": "SpaizZzer",
-    "booksRead": 3,
+    "booksRead": 5,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -4168,7 +4168,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": ""
       },
@@ -4177,7 +4177,7 @@
         "releaseDate": "2024",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Aeon and the Valthorns expand their reach to the neighboring worlds. They meet new people, new friends, new enemies, and encounter unusual races and creatures, and along the way, they accumulate more power, and build up…"
       },
