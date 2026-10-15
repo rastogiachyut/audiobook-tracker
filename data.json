@@ -2,7 +2,7 @@
   {
     "title": "Return of the Runebound Professor",
     "author": "Actus",
-    "booksRead": 7,
+    "booksRead": 8,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -80,7 +80,7 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Wizen is dead. Noah chased him through the Damned Plains."
       },
@@ -449,7 +449,7 @@
   {
     "title": "The Path of Ascension",
     "author": "C. Mantis",
-    "booksRead": 10,
+    "booksRead": 11,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -563,7 +563,7 @@
         "releaseDate": "2026",
         "rating": "4.61",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "A century into the war, the Ascenders aren't the o…"
       },
@@ -1319,7 +1319,7 @@
   {
     "title": "All the Skills",
     "author": "Honor Rae",
-    "booksRead": 5,
+    "booksRead": 6,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -1379,7 +1379,7 @@
         "releaseDate": null,
         "rating": "4.3",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Book 6 of the hit Progression Fantasy series where power is measured in cards."
       }
@@ -2030,8 +2030,8 @@
         "releaseDate": null,
         "rating": "4.4",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "Sacred artists follow a thousand Paths to power, using their souls as weapons."
       },
       {
@@ -2039,8 +2039,8 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "Outside Sacred Valley, ancient ruins rise from the earth."
       },
       {
@@ -2048,8 +2048,8 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "Lindon has a year left. When his time runs out, he'll have to fight."
       },
       {
@@ -2057,8 +2057,8 @@
         "releaseDate": null,
         "rating": "4.6",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "With his duel fast approaching, Lindon is locked away in prison."
       },
       {
@@ -2066,8 +2066,8 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "A tournament approaches. All around the world, great powers gather."
       },
       {
@@ -2075,8 +2075,8 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "Long ago, the Monarch Northstrider created a world of his own."
       },
       {
@@ -2084,8 +2084,8 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "The Monarchs gather and the fate of the world hangs in the balance."
       },
       {
@@ -2093,8 +2093,8 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "As the Uncrowned King tournament reaches its final rounds, alliances shift."
       },
       {
@@ -2102,8 +2102,8 @@
         "releaseDate": null,
         "rating": "4.7",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "It's time to go back home to Sacred Valley."
       },
       {
@@ -2111,8 +2111,8 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "The battle in the heavens has left a target on Lindon's back."
       },
       {
@@ -2120,8 +2120,8 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "Sacred Valley has been saved, at least what's left of it."
       },
       {
@@ -2129,8 +2129,8 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "The final book in the Cradle series."
       }
     ]
@@ -3788,7 +3788,7 @@
   {
     "title": "Traveler's Gate",
     "author": "Will Wight",
-    "booksRead": null,
+    "booksRead": 1,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -3803,7 +3803,7 @@
         "releaseDate": null,
         "rating": "4.1",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Simon can't save his friend from the Valinhall House of Blades."
       },
@@ -3813,7 +3813,7 @@
         "rating": "4.1",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
+        "downloaded": true,
         "description": "As the conflict between Enosh and Damasca builds to a head."
       },
       {
@@ -3822,7 +3822,7 @@
         "rating": "4.0",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The final book in the Traveler's Gate trilogy. Simon must master all the territories to save his world."
       }
     ]
@@ -3830,7 +3830,7 @@
   {
     "title": "Divine Apostasy",
     "author": "A.F. Kay",
-    "booksRead": null,
+    "booksRead": 12,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -3938,6 +3938,15 @@
         "doneReading": true,
         "downloaded": true,
         "description": null
+      },
+      {
+        "title": "The Twelfth Conclave",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": true,
+        "downloaded": true,
+        "description": "Book 12 of the Divine Apostasy series by A.F. Kay."
       }
     ]
   },
@@ -3989,6 +3998,200 @@
         "title": "Adventures on Brad 9",
         "downloaded": false,
         "doneReading": false
+      }
+    ]
+  },
+  {
+    "title": "System Apocalypse",
+    "author": "Tao Wong",
+    "booksRead": 0,
+    "status": "complete",
+    "myRating": "4/10",
+    "myReview": "Bad writing, bad character design, no growth, shit ending.",
+    "goodreads": {
+      "rating": null,
+      "description": "A system apocalypse LitRPG series by Tao Wong.",
+      "url": "https://www.goodreads.com/series/260347-the-system-apocalypse"
+    },
+    "books": []
+  },
+  {
+    "title": "Tree of Aeons",
+    "author": "Spaizzzer",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": "An isekai story where the protagonist is reincarnated as a tree in a fantasy world. A unique perspective on the LitRPG/isekai genre with deep worldbuilding and slow-burn progression.",
+      "url": "https://www.goodreads.com/search?q=tree+of+aeons+spaizzzer"
+    },
+    "books": [
+      {
+        "title": "Tree of Aeons: Book 1",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Tree of Aeons: Book 2",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Tree of Aeons: Book 3",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Tree of Aeons: Book 4",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Syl",
+    "author": null,
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Syl: Book 1",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Syl: Book 2",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Syl: Book 3",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Syl: Book 4",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Regressor Sect Master",
+    "author": "Spaizzzer",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Regressor Sect Master: Book 1",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 2",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 3",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 4",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 5",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 6",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "Regressor Sect Master: Book 7",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
       }
     ]
   }
