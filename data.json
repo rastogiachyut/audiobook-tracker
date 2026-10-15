@@ -114,7 +114,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Wilds relentlessly reclaim all things. Humanity shelters within their cities."
       },
       {
@@ -123,7 +123,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Wilds reclaim all things. Humanity shelters within their cities. An initiate must learn to survive."
       },
       {
@@ -132,7 +132,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The world reclaims all things. An acolyte continues their training within the city's protective walls."
       },
       {
@@ -141,7 +141,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The world reclaims all things. A scholar delves deeper into the mysteries of magic and survival."
       },
       {
@@ -150,7 +150,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Wilds reclaim all things. Humanity shelters within their cities."
       },
       {
@@ -159,7 +159,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The iron-clad reality of the world relentlessly confronts those who would challenge it. A Grand Magus rises."
       },
       {
@@ -168,7 +168,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "A voyageur ventures beyond the safety of the city walls into the untamed Wilds."
       },
       {
@@ -177,7 +177,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The iron-clad Reality of the world will not be denied. A savant pushes the boundaries of knowledge."
       },
       {
@@ -186,7 +186,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The iron-clad Reality of the world cannot be denied. A magister wields unprecedented power."
       },
       {
@@ -195,7 +195,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "An ascendant rises to face the ultimate challenge of the iron-clad world."
       },
       {
@@ -465,7 +465,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "With the Path of Ascension finished, the trio must prepare for the coming war."
       },
       {
@@ -474,7 +474,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "With an unexpected temporary addition to the team, Matt continues his ascent."
       },
       {
@@ -483,7 +483,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Training, glory, practicing for war. Shortly after the war, Matt faces new challenges."
       },
       {
@@ -492,7 +492,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "After participating in the Empire's vassal war, Matt returns to training."
       },
       {
@@ -501,7 +501,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Matt, Liz, and Aster are now Tier 10, which means it's time for new challenges."
       },
       {
@@ -510,7 +510,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "In search for greater power, Matt, Liz, and Aster venture into dangerous territory."
       },
       {
@@ -519,7 +519,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Deep inside Minkalla's depths, the team faces their most dangerous challenges yet."
       },
       {
@@ -528,7 +528,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Days and Tiers pass as Matt, Liz, and Aster leave Minkalla behind."
       },
       {
@@ -537,7 +537,7 @@
         "rating": "4.5",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "With Light and Shadow completing the Path of Ascension, new challenges await."
       },
       {
@@ -597,7 +597,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -606,7 +606,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -615,7 +615,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -624,7 +624,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "While war rages in Thameland, Alex must navigate the dangers of the City of the Fool."
       },
       {
@@ -633,7 +633,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -642,7 +642,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -651,7 +651,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "A mysterious song holds the key to understanding the Fool's true power."
       },
       {
@@ -669,7 +669,7 @@
         "rating": "4.4",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The gods chose him. He said no. After his parents died, Alex Roth refuses to be the next Fool."
       },
       {
@@ -894,7 +894,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Netherworld: it is a hellish landscape inhabited by demons."
       },
       {
@@ -903,7 +903,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Pride and prejudice. Humanity's prejudice against demons, and a demon's pride."
       },
       {
@@ -912,7 +912,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "A Monster Evolution LitRPG. Heretic tells the story of a demon in the mortal realm."
       },
       {
@@ -921,7 +921,7 @@
         "rating": "4.8",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Nightsveil has fallen. Humankind is reeling."
       },
       {
@@ -930,7 +930,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Salvos faces new challenges on the Mountain, where ancient powers stir."
       },
       {
@@ -939,7 +939,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "After surviving an encounter with the Beast, the party regroups."
       },
       {
@@ -948,7 +948,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Defiled threaten everything Salvos has built. She must confront corruption head-on."
       },
       {
@@ -957,7 +957,7 @@
         "rating": "4.7",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Artifice reveals hidden machinations behind the war between demons and mortals."
       },
       {
@@ -966,7 +966,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Hollowed by loss, Salvos must find the strength to continue fighting."
       },
       {
@@ -975,7 +975,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "The Swarm descends, threatening to overwhelm everything in its path."
       },
       {
@@ -984,7 +984,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Monsters and matrimony - even a demon deserves a chance at happiness."
       },
       {
@@ -993,7 +993,7 @@
         "rating": "4.6",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Dissolution threatens the very fabric of reality as the conflict reaches its peak."
       },
       {
@@ -1068,7 +1068,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "A narcissistic dragon discovers the adventuring class system and hires a human thief as his minion."
       },
       {
@@ -1077,7 +1077,7 @@
         "rating": "4.2",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Vainqueur and his minion Victor face new challenges in the second installment."
       },
       {
@@ -1086,7 +1086,7 @@
         "rating": "4.2",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Vainqueur embarks on a world tour in the third book of the series."
       },
       {
@@ -1632,7 +1632,7 @@
     "title": "Beneath the Dragoneye Moons",
     "author": "Selkie Myth",
     "booksRead": null,
-    "status": "complete",
+    "status": "planned",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -2940,7 +2940,7 @@
     "title": "Legends and Lattes",
     "author": "Travis Baldree",
     "booksRead": null,
-    "status": "complete",
+    "status": "planned",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -2982,7 +2982,7 @@
     "title": "Mage Errant",
     "author": "John Bierce",
     "booksRead": 7,
-    "status": "complete",
+    "status": "planned",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -3516,7 +3516,7 @@
         "rating": "4.2",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Legends speak of wizards with the power to rival Gods."
       },
       {
@@ -3525,7 +3525,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Hump triumphed over the challenges of Bledsbury Dungeon."
       },
       {
@@ -3534,7 +3534,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Scarred by the Remnant Realm, Hump must reclaim his strength."
       },
       {
@@ -3543,7 +3543,7 @@
         "rating": "4.3",
         "url": null,
         "doneReading": true,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Book 4 of a Progression Fantasy LitRPG/GameLit Series."
       },
       {

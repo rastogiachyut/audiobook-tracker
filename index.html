@@ -116,10 +116,15 @@
   .series-title { font-weight: 600; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .series-author { font-size: 0.9rem; color: var(--text2); margin-top: 2px; }
 
-  .series-books-read {
-    font-size: 0.9rem; color: var(--text2); text-align: center; white-space: nowrap;
+  .series-stats { display: flex; gap: 6px; }
+  .series-stat {
+    font-size: 0.72rem; color: var(--text2); text-align: center; white-space: nowrap;
+    min-width: 54px; text-transform: uppercase; letter-spacing: 0.5px;
   }
-  .series-books-read .count { font-weight: 700; color: var(--green); font-size: 1.15rem; }
+  .series-stat .count { font-weight: 700; color: var(--text); font-size: 1.15rem; letter-spacing: 0; }
+  .series-stat.read .count { color: var(--green); }
+  .series-stat.dl .count { color: var(--blue); }
+  .series-stat.incomplete .count { color: var(--yellow); }
 
   .status-badge {
     display: inline-block; padding: 3px 10px; border-radius: 20px;
@@ -394,7 +399,7 @@
   /* Responsive */
   @media (max-width: 768px) {
     .series-header { grid-template-columns: 1fr auto; gap: 8px; padding: 12px 14px; }
-    .series-books-read, .gr-rating, .series-actions { display: none; }
+    .series-stats, .gr-rating, .series-actions { display: none; }
     .book-item { grid-template-columns: 28px 30px 1fr auto; gap: 8px; }
     .book-header-row { display: none; }
     .book-meta { display: none; }
@@ -555,7 +560,7 @@ let openDescs = new Set();
 let dashboardCollapsed = false;
 
 // --- Data ---
-const DATA_VERSION = 11; // bump this when data.json changes to force reload
+const DATA_VERSION = 12; // bump this when data.json changes to force reload
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
   const savedVersion = parseInt(localStorage.getItem(STORAGE_KEY + '_version') || '0', 10);
@@ -736,6 +741,42 @@ function getDoneCount(entry) {
 function getTotalBooks(entry) {
   return (entry.books || []).length || entry.booksRead || '?';
 }
+function getDlCount(entry) {
+  return (entry.books || []).filter(b => b.downloaded).length;
+}
+function allBooksRead(entry) {
+  return !!(entry.books && entry.books.length) && entry.books.every(b => b.doneReading);
+}
+function statsHtml(s) {
+  const total = getTotalBooks(s), read = getDoneCount(s), dl = getDlCount(s);
+  return `<div class="series-stats">
+    <div class="series-stat"><div class="count">${total}</div><div>Books</div></div>
+    <div class="series-stat read"><div class="count">${read}</div><div>Read</div></div>
+    <div class="series-stat dl ${dl < (s.books||[]).length ? 'incomplete' : ''}"><div class="count">${dl}</div><div>DL</div></div>
+  </div>`;
+}
+// Invariants: a read book is always downloaded; "complete" needs every book read.
+function enforceRules(s) {
+  let changed = false;
+  (s.books || []).forEach(b => { if (b.doneReading && !b.downloaded) { b.downloaded = true; changed = true; } });
+  if (s.status === 'complete' && (s.books || []).length && !allBooksRead(s)) {
+    s.status = getDoneCount(s) > 0 ? 'reading' : 'planned';
+    changed = true;
+  }
+  return changed;
+}
+function normalizeData() {
+  let changed = false;
+  data.forEach(s => { if (enforceRules(s)) changed = true; });
+  if (changed) saveData();
+}
+function offerComplete(idx) {
+  const s = data[idx];
+  if (!s || !allBooksRead(s) || s.status === 'complete' || isDropped(s)) return;
+  window._completeIdx = idx;
+  showConfirm(`All ${s.books.length} books of <b>${esc(s.title)}</b> are read. Mark the series Complete?`,
+    () => { const s = data[window._completeIdx]; if (s) { s.status = 'complete'; saveData(); render(); showToast('Marked complete 🎉', 'success'); } });
+}
 
 // --- Filtering & Sorting ---
 function getFiltered() {
@@ -783,6 +824,7 @@ function renderStats() {
 }
 
 function render() {
+  normalizeData();
   renderStats();
   renderDashboard();
   const list = document.getElementById('seriesList');
@@ -840,7 +882,7 @@ function render() {
           <div class="series-title" title="${esc(s.title)}">${dup?'📌 ':''}${esc(s.title)}</div>
           <div class="series-author">${esc(s.author || '—')}</div>
         </div>
-        <div class="series-books-read"><div class="count">${done}</div><div>of ${total}</div></div>
+        ${statsHtml(s)}
         <div><span class="status-badge status-${s.status||'reading'}">${s.status||'reading'}</span></div>
         <div>${s.myRating ? `<span class="rating-badge rating-${s.myRating}">${s.myRating}</span>` : '—'}</div>
         <div>${grRating} ${grLink}</div>
@@ -880,14 +922,19 @@ function selectAllBooks(idx) {
 function toggleAllDone(idx, checked) {
   const s = data[idx];
   if (!s || !s.books) return;
-  s.books.forEach(b => { b.doneReading = checked; });
+  s.books.forEach(b => { b.doneReading = checked; if (checked) b.downloaded = true; });
+  if (enforceRules(s)) showToast('Not every book is read — status set to ' + s.status, 'info');
   saveData();
   render();
+  if (checked) offerComplete(idx);
 }
 function toggleAllDL(idx, checked) {
   const s = data[idx];
   if (!s || !s.books) return;
-  s.books.forEach(b => { b.downloaded = checked; });
+  let unread = 0;
+  s.books.forEach(b => { b.downloaded = checked; if (!checked && b.doneReading) { b.doneReading = false; unread++; } });
+  if (unread) showToast(`Also unmarked ${unread} read book(s) — a book must be downloaded to be read`, 'warning');
+  enforceRules(s);
   saveData();
   render();
 }
@@ -900,36 +947,56 @@ function toggleDesc(bKey) {
   const el = document.getElementById('desc-' + bKey);
   if (el) el.classList.toggle('open');
 }
+function refreshCard(sIdx) {
+  // Update one card in place (no full re-render, preserves scroll)
+  const s = data[sIdx];
+  const card = [...document.querySelectorAll('.series-card')].find(c => c.dataset.idx == sIdx);
+  if (!s || !card) return;
+  const stats = card.querySelector('.series-stats');
+  if (stats) stats.outerHTML = statsHtml(s);
+  card.dataset.status = s.status || 'reading';
+  const badge = card.querySelector('.status-badge');
+  if (badge) { badge.className = 'status-badge status-' + (s.status || 'reading'); badge.textContent = s.status || 'reading'; }
+  card.querySelectorAll('.book-item').forEach((item, bi) => {
+    const b = s.books[bi]; if (!b) return;
+    item.classList.toggle('done-reading', !!b.doneReading);
+    const [readBox, dlBox] = item.querySelectorAll('input[type=checkbox]');
+    if (readBox) readBox.checked = !!b.doneReading;
+    if (dlBox) dlBox.checked = !!b.downloaded;
+  });
+  const [hdrDone, hdrDl] = card.querySelectorAll('.book-header-row input[type=checkbox]');
+  if (hdrDone) hdrDone.checked = s.books.every(b => b.doneReading);
+  if (hdrDl) hdrDl.checked = s.books.every(b => b.downloaded);
+}
+
 function toggleBookRead(sIdx, bIdx, checked) {
-  if (data[sIdx] && data[sIdx].books && data[sIdx].books[bIdx] !== undefined) {
-    data[sIdx].books[bIdx].doneReading = checked;
-    saveData();
-    renderDashboard();
-    // Update UI without full re-render to preserve scroll
-    const cards = Array.from(document.querySelectorAll('.series-card'));
-    const item = cards[cards.findIndex(c => c.dataset.idx == sIdx)]?.querySelectorAll('.book-item')[bIdx];
-    if (item) item.classList.toggle('done-reading', checked);
-    renderStats();
-    // Update count display
-    const card = [...document.querySelectorAll('.series-card')].find(c => c.dataset.idx == sIdx);
-    if (card) {
-      const done = data[sIdx].books.filter(b => b.doneReading).length;
-      const total = data[sIdx].books.length;
-      const countEl = card.querySelector('.series-books-read .count');
-      if (countEl) countEl.textContent = done;
-      const ofEl = card.querySelector('.series-books-read > div:last-child');
-      if (ofEl) ofEl.textContent = 'of ' + total;
-    }
-  }
+  const s = data[sIdx];
+  if (!(s && s.books && s.books[bIdx] !== undefined)) return;
+  const b = s.books[bIdx];
+  b.doneReading = checked;
+  if (checked && !b.downloaded) { b.downloaded = true; showToast('Marked as downloaded too', 'info', 2000); }
+  if (enforceRules(s)) showToast('Not every book is read — status set to ' + s.status, 'info');
+  saveData();
+  renderDashboard();
+  renderStats();
+  refreshCard(sIdx);
+  if (checked) offerComplete(sIdx);
 }
 
 function toggleBookDownloaded(sIdx, bIdx, checked) {
-  if (data[sIdx] && data[sIdx].books && data[sIdx].books[bIdx] !== undefined) {
-    data[sIdx].books[bIdx].downloaded = checked;
-    saveData();
-    renderDashboard();
-    renderStats();
+  const s = data[sIdx];
+  if (!(s && s.books && s.books[bIdx] !== undefined)) return;
+  const b = s.books[bIdx];
+  b.downloaded = checked;
+  if (!checked && b.doneReading) {
+    b.doneReading = false;
+    showToast('Also unmarked as read — a book must be downloaded to be read', 'warning');
   }
+  enforceRules(s);
+  saveData();
+  renderDashboard();
+  renderStats();
+  refreshCard(sIdx);
 }
 
 // --- Modal ---
@@ -977,6 +1044,10 @@ function saveSeries() {
     }
   };
   if (!entry.title) { showToast('Title is required', 'warning'); return; }
+  if (entry.status === 'complete' && !allBooksRead(entry)) {
+    showToast(`Can't mark Complete: ${getDoneCount(entry)} of ${(entry.books||[]).length} books read`, 'warning');
+    return;
+  }
   if (idx >= 0) data[idx] = entry; else data.push(entry);
   saveData(); render(); closeModal();
 }
