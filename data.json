@@ -218,12 +218,12 @@
       },
       {
         "title": "Homebound",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "5.00",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
-        "description": ""
+        "downloaded": true,
+        "description": "The iron-clad Reality of the world cannot be denied, nor Existence diminished. The many true threats to Zeme remain hidden for a fleeting moment, allowing Humanity to thrive within their shelters as Mages and Archons…"
       }
     ]
   },
@@ -410,11 +410,11 @@
       },
       {
         "title": "The Primal Hunter 13",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "4.8",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
+        "downloaded": true,
         "description": "With Nevermore done and dusted, it's back to Earth and a galaxy at war."
       },
       {
@@ -569,12 +569,12 @@
       },
       {
         "title": "The Path of Ascension 12: A LitRPG Adventure",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "4.27",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
-        "description": ""
+        "downloaded": true,
+        "description": "Don't miss Book 12 of this action-packed fantasy adventure that blends everything you love about LitRPG with Xianxia."
       }
     ]
   },
@@ -1858,7 +1858,7 @@
   },
   {
     "title": "Bog Standard Isekai",
-    "author": "Mecanimus",
+    "author": "Miles English",
     "booksRead": null,
     "status": "reading",
     "myRating": null,
@@ -1911,7 +1911,7 @@
         "rating": "4.46",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
+        "downloaded": true,
         "description": "No battle plan survives first contact with witches…"
       }
     ]
@@ -2584,7 +2584,7 @@
   },
   {
     "title": "Hell Difficulty Tutorial",
-    "author": "David Petry",
+    "author": "Cerim",
     "booksRead": null,
     "status": "reading",
     "myRating": null,
@@ -2646,7 +2646,7 @@
         "rating": "4.72",
         "url": null,
         "doneReading": false,
-        "downloaded": false,
+        "downloaded": true,
         "description": "Nathaniel is only a halfway through the tutorial, …"
       },
       {
@@ -3754,7 +3754,7 @@
   },
   {
     "title": "Unbound",
-    "author": "Nic G. D. Orr",
+    "author": "Nicoli Gonnella",
     "booksRead": null,
     "status": "reading",
     "myRating": null,
@@ -3766,22 +3766,112 @@
     },
     "books": [
       {
-        "title": "Eternal Awakenings",
-        "releaseDate": null,
-        "rating": "3.8",
+        "title": "Dissonance",
+        "releaseDate": "2022",
+        "rating": null,
         "url": null,
         "doneReading": false,
-        "downloaded": false,
-        "description": "A LitRPG series following a protagonist in a world where magical bonds determine power."
+        "downloaded": true,
+        "description": "A new world. A thousand threats. Welcome to The Continent. Felix's life on Earth had become a series of dead-end jobs, ruined relationships, and rotating apartments smaller than most postage stamps. By all accounts…"
       },
       {
-        "title": "Unbound 2",
-        "releaseDate": null,
-        "rating": "3.8",
+        "title": "Silence",
+        "releaseDate": "2022",
+        "rating": null,
         "url": null,
         "doneReading": false,
-        "downloaded": false,
-        "description": "The sequel continues the journey of forming and strengthening bonds while uncovering the truth about an ancient cataclysm."
+        "downloaded": true,
+        "description": "A sacrifice made. A Primordial defeated. The hard part starts now. Felix had risked everything to stop the threat of the Unending Maw. Except instead of death, he and his Companion Pit were transported to the deadly…"
+      },
+      {
+        "title": "Hunger",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Pirates pacified. Void vanquished. Peace is a fragile beast. Felix has survived the tribulations of the Void and returned to the Continent. Civilization, at long last. Yet the city of Haarwatch has a terrible new issue…"
+      },
+      {
+        "title": "Fury",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The tower has fallen. Banners fly. War brews in the rubble. Felix Nevarre, slayer of the Ravager King and destroyer of Domains, isn't going down without a fight. The Guild Tower has fallen, and Haarwatch has been split…"
+      },
+      {
+        "title": "Threshold",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "One city saved. A Territory to defend. The threshold beckons. The war for Haarwatch has been won, granting Felix a small respite. His time is spent struggling to restore the city with his people, yet trouble brews on…"
+      },
+      {
+        "title": "Expanse",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Archon laid low. Power claimed. A new Lord rises. Felix has established a Stronghold within the Foglands, now called the Territory of Nagast—just as he is now called Autarch. It is a title he cannot help but claim as…"
+      },
+      {
+        "title": "Abyss",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "A desert reborn. An unwanted crown. Ancient terror surfacing. Felix and his people foiled the Hierocracy’s dire plans, freeing the Territory of Ahkestria and unleashing an ocean upon its sands in the process. Now he…"
+      },
+      {
+        "title": "Vault",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "A curse of flame. An oath of ice. A will to challenge fate. Three months have passed since the battle against the High Guard, and Felix and his people have grown. He’s poised on the brink of ascension to Master Tier…"
+      },
+      {
+        "title": "Crown",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Vault Ravaged. Titan Fallen. Fugitives in Flight. Felix and his friends have escaped the Undermount laden with spoils, a belly full of power, and most importantly: another Unbound at their side. Yet, their triumph is…"
+      },
+      {
+        "title": "Empire",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "One God Down. An Entire Pantheon To Go. Who's Next? Felix and his allies have saved Pax'Vrell and won the battle against the Pathless...but the war has only just begun. The Divine are stirring, and the Hierophant has…"
+      },
+      {
+        "title": "Chains",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Stars Fall. Moons Rise. A Cardinal Beast Approaches. Felix and his allies have failed. The Hierophant has taken four Unbound, seized the Chthonic Star, and stands ready to unlock the unbreakable prison of the gods. But…"
+      },
+      {
+        "title": "Ruin",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Moons fall. Chains creak. Ruin descends. Felix survived the assault on Amaranth, rescued the Unbound, and escaped the cataclysmic destruction of Noctis’ fallen moon. He won. But victory has left the north broken. The…"
       }
     ]
   },
@@ -4017,7 +4107,7 @@
   },
   {
     "title": "Tree of Aeons",
-    "author": "Spaizzzer",
+    "author": "SpaizZzer",
     "booksRead": 0,
     "status": "planned",
     "myRating": null,
@@ -4030,7 +4120,7 @@
     "books": [
       {
         "title": "Tree of Aeons: Book 1",
-        "releaseDate": null,
+        "releaseDate": "2023",
         "rating": null,
         "url": null,
         "doneReading": false,
@@ -4039,21 +4129,21 @@
       },
       {
         "title": "Tree of Aeons: Book 2",
-        "releaseDate": null,
+        "releaseDate": "2023",
         "rating": null,
         "url": null,
         "doneReading": false,
         "downloaded": true,
-        "description": ""
+        "description": "It’s not easy being the wise magical tree in a world filled with demons and dangerous foes. Matt’s journey to survive in a world filled with heroes and demons continues! Matt now has to guide his growing nation through…"
       },
       {
         "title": "Tree of Aeons: Book 3",
-        "releaseDate": null,
+        "releaseDate": "2024",
         "rating": null,
         "url": null,
         "doneReading": false,
         "downloaded": true,
-        "description": ""
+        "description": "After a long demonic winter, Tree-Tree reawakens and rebuilds. This time, Tree-Tree aims higher, and tries to build something meant to last in a world filled with heroes and demons. Tree-Tree's new growing empire now…"
       },
       {
         "title": "Tree of Aeons: Book 4",
@@ -4063,12 +4153,39 @@
         "doneReading": false,
         "downloaded": true,
         "description": ""
+      },
+      {
+        "title": "Tree of Aeons: Book 5",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Aeon and the Valthorns expand their reach to the neighboring worlds. They meet new people, new friends, new enemies, and encounter unusual races and creatures, and along the way, they accumulate more power, and build up…"
+      },
+      {
+        "title": "Tree of Aeons: Book 6",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Aeon's expansion has finally attracted the attention of the demons, and they've sent a demonic comet headed towards Aeon's world."
+      },
+      {
+        "title": "Tree of Aeons: Book 7",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Book 7 of an epic reincarnation/isekai LitRPG story about a man who becomes a tree, growing and progressing throughout the ages in an eternal conflict against a demon incursion. With nearly 15 million views between…"
       }
     ]
   },
   {
     "title": "Syl",
-    "author": null,
+    "author": "Lunadea",
     "booksRead": 0,
     "status": "planned",
     "myRating": null,
@@ -4080,8 +4197,35 @@
     },
     "books": [
       {
-        "title": "Syl: Book 1",
-        "releaseDate": null,
+        "title": "Syl: Nucleus",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Syl was given a choice by Gramps when they died. Reincarnate as a regular person or embark on a daring experiment. Driven by a desire to honor Gramps and a sense of adventure, Syl chose the latter... only to awaken as a…"
+      },
+      {
+        "title": "Syl: Osmosis",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Syl has conquered the forest, survived goblin treachery, and infiltrated a town, disguised as an elf. Now Syl has set their sights upon the next big goal—conquer a flying island! Pegasus, harpies, ghouls and tricky…"
+      },
+      {
+        "title": "Syl: Diffusion",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "With Syl's checklist completed and Gold rank achieved in the Adventurer's Guild, the next thrilling adventure awaits in the Dwarven Empire!"
+      },
+      {
+        "title": "Syl: Synthesis",
+        "releaseDate": "2025",
         "rating": null,
         "url": null,
         "doneReading": false,
@@ -4089,31 +4233,13 @@
         "description": ""
       },
       {
-        "title": "Syl: Book 2",
+        "title": "Syl: Catalysis",
         "releaseDate": null,
         "rating": null,
         "url": null,
         "doneReading": false,
         "downloaded": true,
-        "description": ""
-      },
-      {
-        "title": "Syl: Book 3",
-        "releaseDate": null,
-        "rating": null,
-        "url": null,
-        "doneReading": false,
-        "downloaded": true,
-        "description": ""
-      },
-      {
-        "title": "Syl: Book 4",
-        "releaseDate": null,
-        "rating": null,
-        "url": null,
-        "doneReading": false,
-        "downloaded": true,
-        "description": ""
+        "description": "Freshly evolved and having gained some newfound elven allies, Syl is ready to have some fun and let loose for a bit. After being forced into the forest, now it's time to hit the beach and maybe see about handling that…"
       }
     ]
   },
@@ -4192,6 +4318,576 @@
         "doneReading": false,
         "downloaded": false,
         "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Rise of the Living Forge",
+    "author": "Actus",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Rise of the Living Forge",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Betrayed by his guild... Left for dead... He'll become stronger than they ever imagined. Ever since Arwin was summoned as a child, all he has known is war. And now, to claim the demon queen's life and end the war, he…"
+      },
+      {
+        "title": "Rise of the Living Forge 2",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Everything Arwin fought for was a lie. The war was fake and the fault for its creation laid in the arms of the Adventurer’s Guild. But as powerful as Arwin has been becoming, he’s nowhere near strong enough to take the…"
+      },
+      {
+        "title": "Rise of the Living Forge 3",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Book 3 in the next epic LitRPG Saga from Actus, bestselling author of Return of the Runebound Professor . With nearly 7-million views on Royal Road, this definitive edition is perfect for fans of Seth Ring, Jonathan…"
+      },
+      {
+        "title": "Rise of the Living Forge 4",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Rise of the Living Forge 5",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The Menagerie has finally stepped into the limelight. After taking down Twelve, Arwin and his guild have earned themselves an invitation to the Proving Grounds. But they aren't participating alone. They've been joined…"
+      },
+      {
+        "title": "Rise of the Living Forge 6",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Book 6 in this epic LitRPG Saga from Actus, bestselling author of Return of the Runebound Professor. With nearly 7-million views on Royal Road, this definitive edition is perfect for fans of Seth Ring, Jonathan Brooks…"
+      }
+    ]
+  },
+  {
+    "title": "My Witchy Wives",
+    "author": "Atlas Cannon",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "My Witchy Wives",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "A midnight witch hunt had an unexpected final destination: Ben Ford's living room. Ben was a simple man. He enjoyed video games, his dog, cooking, and suffering through each week of work so he could relax on the…"
+      }
+    ]
+  },
+  {
+    "title": "Chronicles of Empyrea",
+    "author": "Michael Dalton",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Mercenary of Empyrea",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "I don’t know who I am. I only know what I need to be. I awoke in a tomb. I had nothing but a big sword and uncertain memories from uncertain lives. I was a great warrior who wandered this land before being killed by an…"
+      },
+      {
+        "title": "Adventurer of Empyrea",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Included in the Chronicles of Empyrea Omnibus (Books 1-4) audiobook."
+      },
+      {
+        "title": "Warlord of Empyrea",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Included in the Chronicles of Empyrea Omnibus (Books 1-4) audiobook."
+      },
+      {
+        "title": "God-King of Empyrea",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Included in the Chronicles of Empyrea Omnibus (Books 1-4) audiobook."
+      }
+    ]
+  },
+  {
+    "title": "A Thousand Li",
+    "author": "Tao Wong",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "The First Step",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The First Stop",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The First War",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Second Sect",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Second Expedition",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Second Storm",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Third Kingdom",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Third Realm",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Third Cut",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Fourth Stage",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "The Fourth Fall",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The war-mongering kingdom of Cai has begun to stir once again, the long held peace brought to the brink by a widespread drought. Now, the neighbouring kingdoms of Wei and Shen must ally together to deal with the Cai or…"
+      },
+      {
+        "title": "The Fourth Wall",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "The Wolf King's Lair",
+    "author": "Devan Drake",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "The Wolf King's Lair",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Dave Smith is having a bad day, week, month, maybe even year. Freshly unemployed, facing eviction, and now he's been transported to a fantasy world. A wish come true for many a geek, if only he hadn't died less than a…"
+      },
+      {
+        "title": "The Wolf King's Lair 2",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Daxas has survived his first few weeks as a Dungeon. He has successfully discovered several exploits in the system and has been thriving. He is advancing to the second rank, fought off an invasion of orcs and goblins…"
+      },
+      {
+        "title": "The Wolf King's Lair 3",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "The Wolf King's Lair 4",
+        "releaseDate": "2022",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Daxas' trials continue. He has defeated those with the temerity to face him and claimed the dark elf Dungeon Mistress Jen'Zadeer Shadestar for his own. His guild, the Dark Moon Rising, continues to flourish despite its…"
+      },
+      {
+        "title": "The Wolf King's Lair 5",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "There are others in the Proving Grounds, like the Silver Lady, Jezebel. She had her own plans, which don't align with Daxas'. Not to mention that the threat from without is undiminished. Timian, and others, are still…"
+      },
+      {
+        "title": "The Wolf King's Lair 6",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Ultimate Level 1",
+    "author": "Shawn Wilson",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Shattered Dreams",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      },
+      {
+        "title": "Shattered Limits",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Max is finally getting a handle on the skill, finding enjoyment in battling and striving to grow his skills and stats. His new friends don't know the whole truth, but they flee trouble together, arriving at the human…"
+      },
+      {
+        "title": "Shattered Boundaries",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "With the threat on Tanila's life, Max gives into the black skill: Consume."
+      },
+      {
+        "title": "New Dreams",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The dream of every adventurer became real as Max, Tanila, Fowl, and Batrire entered the tower. Before they can finish the first floor, they learn that not only is the tower going to challenge them in a variety of new…"
+      },
+      {
+        "title": "New Freedoms",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "As Max and the team defeat yet another boss in the tower, they quickly realize that they are facing harder things than most. Each of them must work together to overcome challenges that test not only their strength and…"
+      },
+      {
+        "title": "New Potential",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Captured by a powerful foe, Max finds himself teleported to a terrible prison. His black skill, Bob, and Max work together to try and break free, but the mysterious captor stymies them at every turn. A cruel game is…"
+      },
+      {
+        "title": "Ultimate Truths",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Ultimate Boundaries",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Ultimate Dreams",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Max Hoste has known struggle since the day he acquired his black skill, Consume. Now with a friend kidnapped, he and the rest of his party must find a way to save Cordellia before something happens to her. Making things…"
+      },
+      {
+        "title": "Divine Creation",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Divine Conflict",
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "title": "Welcome to the Multiverse",
+    "author": "Sean Oswald",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "Induction",
+        "releaseDate": "2023",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Silas is inducted into the System, becoming the last in a long line of Earth's \"forerunners.\" The rewards are great, but the danger is greater. We are not alone in the universe. The fate of five worlds hangs on how…"
+      },
+      {
+        "title": "Countdown",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Silas, now vastly more powerful than he ever anticipated, confronts a harsh truth: brute strength alone won't save his world. Beyond mere leveling up lies a complex path to salvation. Embarking on a rigorous training…"
+      },
+      {
+        "title": "Collapse",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Something always goes sideways, but this is bigger than expected. Maybe it's not an entirely bad thing, though, as mana-infected animals spreading over the world would definitely make everyone more open to the idea of…"
+      },
+      {
+        "title": "Resistance",
+        "releaseDate": "2024",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Silas is growing into the responsibilities weighing him down. Earth is struggling, but there is hope. The deals that Silas has made have brought resources and trainers to Earth. He's helped some leaders gain an…"
+      },
+      {
+        "title": "Contention",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "With less than a month left to prepare the Earth for what is about to happen, Silas must pull out all the stops to save as many people as possible. Of course, if one system wasn't bad enough, Earth has been declared a…"
+      },
+      {
+        "title": "Control",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The apocalypse has arrived. Now, it's down to control. Who will control the rich resources of a newly inducted world? Multiple systems, sects, guilds, and incursion parties are all aiming for that control. But Silas…"
+      },
+      {
+        "title": "Invasion",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "The siren has sounded, and old factions of the multiverse are moving. The Earth in general and Silas in particular have become hot commodities. The system was supposed to give Earth a probationary period, but the…"
+      },
+      {
+        "title": "Dispute",
+        "releaseDate": "2025",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Sides are being drawn, and the stakes are higher than ever. Silas is making allies, but also enemies. Now, he not only has to worry about Earth, but also must save Galen from a threat beyond any other. Many things are…"
+      },
+      {
+        "title": "Divergence",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Growing stronger has brought its own challenges as Silas is more of a target than ever. Worse, the Earth and its allies become targets too. Decisions have been made and obligations accrued. The threats exist at many…"
+      }
+    ]
+  },
+  {
+    "title": "The Mountain Is You",
+    "author": "Brianna Wiest",
+    "booksRead": 0,
+    "status": "planned",
+    "myRating": null,
+    "myReview": null,
+    "goodreads": {
+      "rating": null,
+      "description": null,
+      "url": null
+    },
+    "books": [
+      {
+        "title": "The Mountain Is You: Transforming Self-Sabotage Into Self-Mastery",
+        "releaseDate": "2020",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": true,
+        "description": "Nonfiction. On the roots of self-sabotage and how to move through it."
       }
     ]
   }
