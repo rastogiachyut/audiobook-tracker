@@ -1859,7 +1859,7 @@
   {
     "title": "Bog Standard Isekai",
     "author": "Miles English",
-    "booksRead": null,
+    "booksRead": 5,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -1910,7 +1910,7 @@
         "releaseDate": "2026",
         "rating": "4.46",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "No battle plan survives first contact with witches…"
       }
