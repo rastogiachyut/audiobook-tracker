@@ -2585,7 +2585,7 @@
   {
     "title": "Hell Difficulty Tutorial",
     "author": "Cerim",
-    "booksRead": null,
+    "booksRead": 5,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -4486,8 +4486,8 @@
   {
     "title": "A Thousand Li",
     "author": "Tao Wong",
-    "booksRead": 0,
-    "status": "planned",
+    "booksRead": 9,
+    "status": "reading",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -4501,8 +4501,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4510,8 +4510,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4519,8 +4519,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4528,8 +4528,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4537,8 +4537,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4546,8 +4546,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4555,8 +4555,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4564,8 +4564,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
@@ -4573,8 +4573,8 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": ""
       },
       {
