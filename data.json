@@ -4186,8 +4186,8 @@
   {
     "title": "Syl",
     "author": "Lunadea",
-    "booksRead": 0,
-    "status": "planned",
+    "booksRead": 5,
+    "status": "reading",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -4201,7 +4201,7 @@
         "releaseDate": "2024",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Syl was given a choice by Gramps when they died. Reincarnate as a regular person or embark on a daring experiment. Driven by a desire to honor Gramps and a sense of adventure, Syl chose the latter... only to awaken as a…"
       },
@@ -4210,7 +4210,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Syl has conquered the forest, survived goblin treachery, and infiltrated a town, disguised as an elf. Now Syl has set their sights upon the next big goal—conquer a flying island! Pegasus, harpies, ghouls and tricky…"
       },
@@ -4219,7 +4219,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With Syl's checklist completed and Gold rank achieved in the Adventurer's Guild, the next thrilling adventure awaits in the Dwarven Empire!"
       },
@@ -4228,7 +4228,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": ""
       },
@@ -4237,7 +4237,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Freshly evolved and having gained some newfound elven allies, Syl is ready to have some fun and let loose for a bit. After being forced into the forest, now it's time to hit the beach and maybe see about handling that…"
       }
@@ -4324,8 +4324,8 @@
   {
     "title": "Rise of the Living Forge",
     "author": "Actus",
-    "booksRead": 0,
-    "status": "planned",
+    "booksRead": 6,
+    "status": "reading",
     "myRating": null,
     "myReview": null,
     "goodreads": {
@@ -4339,7 +4339,7 @@
         "releaseDate": "2024",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Betrayed by his guild... Left for dead... He'll become stronger than they ever imagined. Ever since Arwin was summoned as a child, all he has known is war. And now, to claim the demon queen's life and end the war, he…"
       },
@@ -4348,7 +4348,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Everything Arwin fought for was a lie. The war was fake and the fault for its creation laid in the arms of the Adventurer’s Guild. But as powerful as Arwin has been becoming, he’s nowhere near strong enough to take the…"
       },
@@ -4357,7 +4357,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Book 3 in the next epic LitRPG Saga from Actus, bestselling author of Return of the Runebound Professor . With nearly 7-million views on Royal Road, this definitive edition is perfect for fans of Seth Ring, Jonathan…"
       },
@@ -4366,7 +4366,7 @@
         "releaseDate": "2025",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": ""
       },
@@ -4375,7 +4375,7 @@
         "releaseDate": "2026",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "The Menagerie has finally stepped into the limelight. After taking down Twelve, Arwin and his guild have earned themselves an invitation to the Proving Grounds. But they aren't participating alone. They've been joined…"
       },
@@ -4384,7 +4384,7 @@
         "releaseDate": "2026",
         "rating": null,
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "Book 6 in this epic LitRPG Saga from Actus, bestselling author of Return of the Runebound Professor. With nearly 7-million views on Royal Road, this definitive edition is perfect for fans of Seth Ring, Jonathan Brooks…"
       }
