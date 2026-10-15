@@ -212,7 +212,7 @@
         "releaseDate": null,
         "rating": null,
         "url": null,
-        "doneReading": true,
+        "doneReading": false,
         "downloaded": true,
         "description": "Omnibus collection of books six through ten of the Millennial Mage series."
       },
