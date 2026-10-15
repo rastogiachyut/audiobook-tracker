@@ -3611,7 +3611,7 @@
   {
     "title": "The Ripple System",
     "author": "Kyle Kirrin",
-    "booksRead": null,
+    "booksRead": 3,
     "status": "reading",
     "myRating": null,
     "myReview": null,
@@ -3624,38 +3624,56 @@
       {
         "title": "Shadeslinger",
         "downloaded": true,
-        "read": false,
-        "doneReading": true
+        "doneReading": true,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       },
       {
         "title": "Black Sand Baron",
         "downloaded": true,
-        "read": false,
-        "doneReading": true
+        "doneReading": true,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       },
       {
         "title": "Gilded Ghost",
         "downloaded": true,
-        "read": false,
-        "doneReading": true
+        "doneReading": true,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       },
       {
         "title": "Shattersoul",
         "downloaded": true,
-        "read": false,
-        "doneReading": true
+        "doneReading": false,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       },
       {
         "title": "Emperor's End",
         "downloaded": true,
-        "read": false,
-        "doneReading": false
+        "doneReading": false,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       },
       {
         "title": "Lunatic's Landing",
         "downloaded": true,
-        "read": false,
-        "doneReading": false
+        "doneReading": false,
+        "releaseDate": null,
+        "rating": null,
+        "url": null,
+        "description": ""
       }
     ]
   },
