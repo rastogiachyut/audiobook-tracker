@@ -2501,12 +2501,12 @@
       },
       {
         "title": "The Saint of Water",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "4.7",
-        "url": null,
+        "url": "https://www.amazon.com/Eight-Saint-Water-Samer-Rabadi-ebook/dp/B0GL4NBXQX",
         "doneReading": false,
-        "downloaded": false,
-        "description": "The fifth book in the Eight series."
+        "downloaded": true,
+        "description": "The final chapter in Eight's story. A tale of espionage and wilderness survival, of faith and transformation."
       }
     ]
   },
