@@ -137,6 +137,18 @@
   .status-lost-interest { background: rgba(107,114,128,0.2); color: #9ca3af; }
   .status-planned { background: rgba(251,191,36,0.15); color: var(--yellow); }
 
+  /* Next-book badge: what is this series waiting on? */
+  .next-book-badge {
+    display: inline-block; margin-top: 5px; padding: 2px 9px; border-radius: 12px;
+    font-size: 0.72rem; font-weight: 600; white-space: nowrap; max-width: 100%;
+    overflow: hidden; text-overflow: ellipsis; vertical-align: top;
+  }
+  .nb-available { background: rgba(74,222,128,0.18); color: var(--green); }
+  .nb-waiting { background: rgba(96,165,250,0.15); color: var(--blue); }
+  .nb-to-read { background: rgba(251,191,36,0.15); color: var(--yellow); }
+  .nb-ended { background: rgba(192,132,252,0.15); color: #c084fc; }
+  .nb-caught-up { background: rgba(148,163,184,0.18); color: #94a3b8; }
+
   .rating-badge {
     display: inline-flex; align-items: center; justify-content: center;
     width: 32px; height: 32px; border-radius: 8px;
@@ -560,7 +572,7 @@ let openDescs = new Set();
 let dashboardCollapsed = false;
 
 // --- Data ---
-const DATA_VERSION = 24; // bump this when data.json changes to force reload
+const DATA_VERSION = 25; // bump this when data.json changes to force reload
 function loadData() {
   const saved = localStorage.getItem(STORAGE_KEY);
   const savedVersion = parseInt(localStorage.getItem(STORAGE_KEY + '_version') || '0', 10);
@@ -621,6 +633,27 @@ function importJSON(file) {
 function isLostInterest(s) { return s.status === 'lost-interest'; }
 function isDropped(s) { return s.status === 'dropped' || isLostInterest(s); }
 
+// What is this series waiting on? Badge for cards + dashboard "Waiting" section.
+// Priority: unread downloads > nextBook (available/announced/tba) > all read
+// (series ended vs caught-up with nothing announced).
+function nextBookInfo(s) {
+  if (isDropped(s) || !s.books || !s.books.length) return null;
+  const unreadDl = s.books.filter(b => b.downloaded && !b.doneReading).length;
+  if (unreadDl) return { cls: 'to-read', rank: 9, icon: '📖', short: unreadDl + ' to read', label: unreadDl + ' downloaded book(s) not read yet' };
+  const nb = s.nextBook;
+  if (nb && nb.status === 'available')
+    return { cls: 'available', rank: 0, icon: '⬇️', short: `Out now: ${nb.title}`, label: `Available since ${nb.date}${nb.note ? ' — ' + nb.note : ''}` };
+  if (nb && nb.status === 'announced')
+    return { cls: 'waiting', rank: 1, icon: '⏳', short: `${nb.title} — ${nb.date}`, label: `Next book ${nb.date}${nb.note ? ' — ' + nb.note : ''}` };
+  if (nb && nb.status === 'tba')
+    return { cls: 'waiting', rank: 2, icon: '⏳', short: `${nb.title} — TBA`, label: `Next book announced, date TBA${nb.note ? ' — ' + nb.note : ''}` };
+  if (allBooksRead(s)) {
+    if (s.seriesEnded) return { cls: 'ended', rank: 3, icon: '🏁', short: 'Series complete', label: 'Series finished — no more books coming' };
+    return { cls: 'caught-up', rank: 4, icon: '☑', short: 'Caught up, nothing announced', label: 'All books read — next book not announced yet' };
+  }
+  return null;
+}
+
 function toggleDashboard() {
   dashboardCollapsed = !dashboardCollapsed;
   document.getElementById('dashboard').classList.toggle('collapsed', dashboardCollapsed);
@@ -646,8 +679,23 @@ function renderDashboard() {
     return sum + s.books.filter(b => !b.downloaded).length;
   }, 0);
 
+  // Caught-up series: nothing downloaded-unread; either a known next book or fully read.
+  const waiting = data.filter(s => {
+    if (isDropped(s) || !s.books || !s.books.length) return false;
+    if (s.books.some(b => b.downloaded && !b.doneReading)) return false;
+    return !!(s.nextBook || allBooksRead(s));
+  }).sort((a, b) => {
+    const ia = nextBookInfo(a), ib = nextBookInfo(b);
+    const ra = ia ? ia.rank : 9, rb = ib ? ib.rank : 9;
+    if (ra !== rb) return ra - rb;
+    const t = x => Date.parse((x.nextBook || {}).date || '') || Infinity; // soonest first
+    return t(a) - t(b);
+  });
+  // Author-finished series, fully read (frontier closed for good).
+  const finished = data.filter(s => s.seriesEnded && allBooksRead(s) && !isDropped(s) && !(s.nextBook && s.nextBook.status !== 'tba'));
+
   document.getElementById('dashSummary').textContent =
-    `${wantToRead.length} to read · ${dropped.length} dropped · ${needDownload.length} to download · ${totalMissing} total missing`;
+    `${wantToRead.length} to read · ${dropped.length} dropped · ${needDownload.length} to download · ${waiting.length} waiting · ${totalMissing} total missing`;
 
   const wantHtml = wantToRead.length
     ? wantToRead.map(s => {
@@ -685,10 +733,33 @@ function renderDashboard() {
       }).join('')
     : '<div class="dash-empty">Everything downloaded ✅</div>';
 
+  const waitingHtml = waiting.length
+    ? waiting.map(s => {
+        const i = nextBookInfo(s);
+        return `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
+          <span class="status-dot ${s.status}"></span>
+          <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
+          <span class="dash-detail">${i ? i.icon + ' ' + esc(i.short) : '—'}</span>
+        </div>`;
+      }).join('')
+    : '<div class="dash-empty">Nothing on hold 🎉</div>';
+
+  const finishedHtml = finished.length
+    ? finished.map(s => `<div class="dash-item" onclick="scrollToSeries(${data.indexOf(s)})">
+          <span class="status-dot ${s.status}"></span>
+          <span style="overflow:hidden;text-overflow:ellipsis">${esc(s.title)}</span>
+          <span class="dash-detail">🏁 all ${getTotalBooks(s)} read</span>
+        </div>`).join('')
+    : '<div class="dash-empty">None yet</div>';
+
   document.getElementById('dashboardBody').innerHTML = `
     <div class="dash-section">
       <div class="dash-section-title">📖 Next to Read <span class="count">${wantToRead.length}</span></div>
       <div class="dash-list">${wantHtml}</div>
+    </div>
+    <div class="dash-section">
+      <div class="dash-section-title">⏳ Waiting for Next Book <span class="count">${waiting.length}</span></div>
+      <div class="dash-list">${waitingHtml}</div>
     </div>
     <div class="dash-section">
       <div class="dash-section-title">🚫 Dropped <span class="count">${dropped.length}</span></div>
@@ -697,6 +768,10 @@ function renderDashboard() {
     <div class="dash-section">
       <div class="dash-section-title">📥 Need to Download <span class="count">${needDownload.length}</span></div>
       <div class="dash-list">${dlHtml}</div>
+    </div>
+    <div class="dash-section">
+      <div class="dash-section-title">🏁 Finished Series <span class="count">${finished.length}</span></div>
+      <div class="dash-list">${finishedHtml}</div>
     </div>
   `;
 }
@@ -881,6 +956,7 @@ function render() {
         <div class="series-title-area">
           <div class="series-title" title="${esc(s.title)}">${dup?'📌 ':''}${esc(s.title)}</div>
           <div class="series-author">${esc(s.author || '—')}</div>
+          ${nextBookInfo(s) ? `<div class="next-book-badge nb-${nextBookInfo(s).cls}" title="${esc(nextBookInfo(s).label)}">${nextBookInfo(s).icon} ${esc(nextBookInfo(s).short)}</div>` : ''}
         </div>
         ${statsHtml(s)}
         <div><span class="status-badge status-${s.status||'reading'}">${s.status||'reading'}</span></div>

@@ -444,7 +444,13 @@
         "downloaded": false,
         "description": "Ebook out Jul 29, 2026; audiobook release not announced yet."
       }
-    ]
+    ],
+    "nextBook": {
+      "title": "The Primal Hunter 15",
+      "status": "available",
+      "date": "Aug 19, 2026",
+      "note": "Book 16 ebook out Jul 2026, audio TBA"
+    }
   },
   {
     "title": "The Path of Ascension",
@@ -882,7 +888,13 @@
         "downloaded": false,
         "description": "Ebook Nov 17, 2026; audio expected same day (author aims for simultaneous releases)."
       }
-    ]
+    ],
+    "nextBook": {
+      "title": "Volume Ten",
+      "status": "announced",
+      "date": "Nov 17, 2026",
+      "note": "Audio expected same day as ebook"
+    }
   },
   {
     "title": "Salvos",
@@ -1932,7 +1944,13 @@
         "downloaded": false,
         "description": "Book 6 — ebook scheduled Aug 17, 2027; audiobook TBA. Currently serializing on Royal Road."
       }
-    ]
+    ],
+    "nextBook": {
+      "title": "Towering",
+      "status": "announced",
+      "date": "Aug 17, 2027",
+      "note": "Audio usually same day as ebook"
+    }
   },
   {
     "title": "Chrysalis",
@@ -2526,7 +2544,8 @@
         "downloaded": true,
         "description": "The final chapter in Eight's story. A tale of espionage and wilderness survival, of faith and transformation."
       }
-    ]
+    ],
+    "seriesEnded": true
   },
   {
     "title": "Elydes",
@@ -4433,7 +4452,14 @@
         "downloaded": false,
         "description": "Series finale. Ebook Feb 24, 2027 (pre-order live); audiobook TBA (expected after ebook, narrator Peter Berkrot)."
       }
-    ]
+    ],
+    "nextBook": {
+      "title": "Rise of the Living Forge 7",
+      "status": "announced",
+      "date": "Feb 24, 2027",
+      "note": "Series finale; audio TBA"
+    },
+    "seriesEnded": true
   },
   {
     "title": "My Witchy Wives",
