@@ -1913,6 +1913,15 @@
         "doneReading": true,
         "downloaded": true,
         "description": "No battle plan survives first contact with witches…"
+      },
+      {
+        "title": "Towering",
+        "releaseDate": "2027",
+        "rating": null,
+        "url": null,
+        "doneReading": false,
+        "downloaded": false,
+        "description": "Book 6 — ebook scheduled Aug 17, 2027; audiobook TBA. Currently serializing on Royal Road."
       }
     ]
   },
