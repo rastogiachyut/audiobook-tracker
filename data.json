@@ -413,7 +413,7 @@
         "releaseDate": "2026",
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
+        "doneReading": true,
         "downloaded": true,
         "description": "With Nevermore done and dusted, it's back to Earth and a galaxy at war."
       },
@@ -422,27 +422,27 @@
         "releaseDate": null,
         "rating": "4.8",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "As the war across the Milky Way Galaxy intensifies, Jake must choose his battles."
       },
       {
         "title": "The Primal Hunter 15",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "4.7",
         "url": null,
         "doneReading": false,
         "downloaded": false,
-        "description": "Book 15 of the hit Primal Hunter LitRPG Series."
+        "description": "Audiobook out Aug 19, 2026 (Travis Baldree, 21h 3m) — available on Audible."
       },
       {
         "title": "The Primal Hunter 16",
-        "releaseDate": null,
+        "releaseDate": "2026",
         "rating": "4.5",
         "url": null,
         "doneReading": false,
         "downloaded": false,
-        "description": "Book 16 of the hit Primal Hunter LitRPG Series."
+        "description": "Ebook out Jul 29, 2026; audiobook release not announced yet."
       }
     ]
   },
@@ -860,8 +860,8 @@
         "releaseDate": "2026",
         "rating": "4.64",
         "url": null,
-        "doneReading": false,
-        "downloaded": false,
+        "doneReading": true,
+        "downloaded": true,
         "description": "When Politics and Cultivation Collide…Summoned by …"
       },
       {
@@ -869,9 +869,18 @@
         "releaseDate": null,
         "rating": "4.00",
         "url": null,
+        "doneReading": true,
+        "downloaded": true,
+        "description": ""
+      },
+      {
+        "title": "Unintended Cultivator: Volume Ten",
+        "releaseDate": "2026",
+        "rating": null,
+        "url": null,
         "doneReading": false,
         "downloaded": false,
-        "description": ""
+        "description": "Ebook Nov 17, 2026; audio expected same day (author aims for simultaneous releases)."
       }
     ]
   },
