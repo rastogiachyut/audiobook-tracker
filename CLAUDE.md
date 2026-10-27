@@ -15,13 +15,38 @@ and which are read. Repo: `~/workspace/clawd/Audiobook-Tracker`
 | `index.html` | The whole app: CSS, markup and JS. Loads `source-data.js`, keeps user edits in `localStorage`. |
 | `server.py` | Optional save server on port 8420 (`/api/save` writes both data files). Usually not running. |
 | `fetch_books.py`, `populate_books.py`, `apply_books.py`, `raw_books.json` | One-off enrichment scripts from the first import. Historical, not part of the workflow. |
+| `archive/2026-06-initial-import/` | Working files (photo, crops, OCR passes) from the initial data transcription. Provenance only. |
 
 ## Data model
 
 Series: `title, author, booksRead (legacy, ignore), status, myRating (S–F),
-myReview, goodreads{rating,description,url}, books[]`.
+myReview, goodreads{rating,description,url}, books[]`, plus optional
+`nextBook{title,status,date,note}` and `seriesEnded` (see "Waiting feature").
+
 Book: `title, releaseDate (year string), rating, url, doneReading,
 downloaded, description`.
+
+## Waiting feature (next book / series complete)
+
+`nextBook` describes the frontier release for a caught-up series — the first
+thing the user is actually waiting on. `status` is one of:
+
+- `available` — audiobook is out, user just needs to download it
+- `announced` — has a release `date` (format `Aug 19, 2026`; parsed for sorting)
+- `tba` — announced, no date yet
+
+`seriesEnded: true` means the author finished the series (set for Rise of the
+Living Forge after book 7, Eight after book 5). The UI computes, per series:
+unread downloads → `📖 to read`, else `nextBook` → `⬇️ available` / `⏳ waiting`
+badge, else fully read → `🏁 Series complete` (if `seriesEnded`) or `☑ caught
+up`. Dashboard has "⏳ Waiting for Next Book" (sorted: available, then soonest
+date) and "🏁 Finished Series" (`seriesEnded` + all read + no pending
+`nextBook`) sections.
+
+**Maintenance:** when the frontier moves (book downloaded/read, date
+announced, series ends), update `nextBook`/`seriesEnded` in `data.json` —
+verify dates via web search, don't guess. Remove `nextBook` once that book is
+read and nothing new is announced.
 
 Status values: `reading`, `planned`, `complete`, `waiting`, `lost-interest`,
 `dropped`. New series go in as `planned`.
